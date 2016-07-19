@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\UE4_ProjectD.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{110BF10D-389B-4DE7-8519-8DD5A78F1CFE}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\UE4_ProjectD.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\UE4_ProjectDEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{54D2D396-0628-4A54-A35D-1D7248F37277}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\UE4_ProjectD">
+			<UniqueIdentifier>{65D5A982-237C-4239-8A41-CECFFFD044A7}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\UE4_ProjectD\UE4_ProjectD.Build.cs">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\UE4_ProjectD\UE4_ProjectD.cpp">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4_ProjectD\UE4_ProjectD.h">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4_ProjectD\UE4_ProjectDCharacter.h">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\UE4_ProjectD\UE4_ProjectDGameMode.cpp">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4_ProjectD\UE4_ProjectDGameMode.h">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
