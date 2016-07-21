@@ -1,3 +1,3 @@
-C:\Users\DT\Documents\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectD.Build.cs
-C:\Users\DT\Documents\ProjectD\UE4_ProjectD\Source\UE4_ProjectD.Target.cs
-C:\Users\DT\Documents\ProjectD\UE4_ProjectD\Source\UE4_ProjectDEditor.Target.cs
+C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectD.Build.cs
+C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD.Target.cs
+C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectDEditor.Target.cs
