@@ -26,6 +26,18 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UFUNCTION(BlueprintPure, Category = "Health")
+	float GetInitialHealth();
+
+	UFUNCTION(BlueprintPure, Category = "Health")
+	float GetCurrentHealth();
+
+	/**
+	 * Called to update health
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Health")
+	void UpdateHealth(float HealthChange);
+
 protected:
 
 	/** Called for forwards/backward input */
@@ -56,6 +68,17 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End of APawn interface
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health", Meta = (BlueprintProtected))
+	float PlayerInitialHealth;
+
+	//UPROPERTY(VisibleAnywhere, Category = "Health")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health", Meta = (BlueprintProtected))
+	float PlayerCurrentHealth;
+
+private:
+	//UPROPERTY(VisibleAnywhere, Category = "Health")
+	//float PlayerCurrentHealth;
 
 public:
 	/** Returns CameraBoom subobject **/

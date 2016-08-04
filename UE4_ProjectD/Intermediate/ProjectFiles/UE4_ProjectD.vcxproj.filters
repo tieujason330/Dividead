@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\UE4_ProjectD.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{110BF10D-389B-4DE7-8519-8DD5A78F1CFE}</UniqueIdentifier>
+			<UniqueIdentifier>{1CC0D00C-95AE-4C8C-9F92-D6D7B8A4BDE5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\UE4_ProjectD.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{54D2D396-0628-4A54-A35D-1D7248F37277}</UniqueIdentifier>
+			<UniqueIdentifier>{EDBAE1BC-9BCD-4A34-A0EA-A6A4965E9FCB}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\UE4_ProjectD">
-			<UniqueIdentifier>{65D5A982-237C-4239-8A41-CECFFFD044A7}</UniqueIdentifier>
+			<UniqueIdentifier>{28557475-62A7-4748-B742-2432668FBBAC}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\UE4_ProjectD\MyClass.cpp">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\UE4_ProjectD\MyClass.h">
+			<Filter>Source\UE4_ProjectD</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\UE4_ProjectD\UE4_ProjectD.Build.cs">
 			<Filter>Source\UE4_ProjectD</Filter>
 		</None >

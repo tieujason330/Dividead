@@ -11,24 +11,98 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1UE4_ProjectD() {}
 	void AUE4_ProjectDCharacter::StaticRegisterNativesAUE4_ProjectDCharacter()
 	{
+		FNativeFunctionRegistrar::RegisterFunction(AUE4_ProjectDCharacter::StaticClass(), "GetCurrentHealth",(Native)&AUE4_ProjectDCharacter::execGetCurrentHealth);
+		FNativeFunctionRegistrar::RegisterFunction(AUE4_ProjectDCharacter::StaticClass(), "GetInitialHealth",(Native)&AUE4_ProjectDCharacter::execGetInitialHealth);
+		FNativeFunctionRegistrar::RegisterFunction(AUE4_ProjectDCharacter::StaticClass(), "UpdateHealth",(Native)&AUE4_ProjectDCharacter::execUpdateHealth);
 	}
-	IMPLEMENT_CLASS(AUE4_ProjectDCharacter, 2400174771);
+	IMPLEMENT_CLASS(AUE4_ProjectDCharacter, 3300106099);
 	void AUE4_ProjectDGameMode::StaticRegisterNativesAUE4_ProjectDGameMode()
 	{
 	}
-	IMPLEMENT_CLASS(AUE4_ProjectDGameMode, 643527604);
+	IMPLEMENT_CLASS(AUE4_ProjectDGameMode, 2583722328);
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameMode();
+	UMG_API class UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 
+	UE4_PROJECTD_API class UFunction* Z_Construct_UFunction_AUE4_ProjectDCharacter_GetCurrentHealth();
+	UE4_PROJECTD_API class UFunction* Z_Construct_UFunction_AUE4_ProjectDCharacter_GetInitialHealth();
+	UE4_PROJECTD_API class UFunction* Z_Construct_UFunction_AUE4_ProjectDCharacter_UpdateHealth();
 	UE4_PROJECTD_API class UClass* Z_Construct_UClass_AUE4_ProjectDCharacter_NoRegister();
 	UE4_PROJECTD_API class UClass* Z_Construct_UClass_AUE4_ProjectDCharacter();
 	UE4_PROJECTD_API class UClass* Z_Construct_UClass_AUE4_ProjectDGameMode_NoRegister();
 	UE4_PROJECTD_API class UClass* Z_Construct_UClass_AUE4_ProjectDGameMode();
 	UE4_PROJECTD_API class UPackage* Z_Construct_UPackage__Script_UE4_ProjectD();
+	UFunction* Z_Construct_UFunction_AUE4_ProjectDCharacter_GetCurrentHealth()
+	{
+		struct UE4_ProjectDCharacter_eventGetCurrentHealth_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AUE4_ProjectDCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetCurrentHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x14020401, 65535, sizeof(UE4_ProjectDCharacter_eventGetCurrentHealth_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, UE4_ProjectDCharacter_eventGetCurrentHealth_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Health"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AUE4_ProjectDCharacter_GetInitialHealth()
+	{
+		struct UE4_ProjectDCharacter_eventGetInitialHealth_Parms
+		{
+			float ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AUE4_ProjectDCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInitialHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x14020401, 65535, sizeof(UE4_ProjectDCharacter_eventGetInitialHealth_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, UE4_ProjectDCharacter_eventGetInitialHealth_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Health"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AUE4_ProjectDCharacter_UpdateHealth()
+	{
+		struct UE4_ProjectDCharacter_eventUpdateHealth_Parms
+		{
+			float HealthChange;
+		};
+		UObject* Outer=Z_Construct_UClass_AUE4_ProjectDCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("UpdateHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(UE4_ProjectDCharacter_eventUpdateHealth_Parms));
+			UProperty* NewProp_HealthChange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HealthChange"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(HealthChange, UE4_ProjectDCharacter_eventUpdateHealth_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Health"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Called to update health"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AUE4_ProjectDCharacter_NoRegister()
 	{
 		return AUE4_ProjectDCharacter::StaticClass();
@@ -46,13 +120,21 @@ void EmptyLinkFunctionForGeneratedCode1UE4_ProjectD() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20800080;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_AUE4_ProjectDCharacter_GetCurrentHealth());
+				OuterClass->LinkChild(Z_Construct_UFunction_AUE4_ProjectDCharacter_GetInitialHealth());
+				OuterClass->LinkChild(Z_Construct_UFunction_AUE4_ProjectDCharacter_UpdateHealth());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_PlayerCurrentHealth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PlayerCurrentHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(PlayerCurrentHealth, AUE4_ProjectDCharacter), 0x0020080000000005);
+				UProperty* NewProp_PlayerInitialHealth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("PlayerInitialHealth"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(PlayerInitialHealth, AUE4_ProjectDCharacter), 0x0020080000000005);
 				UProperty* NewProp_BaseLookUpRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseLookUpRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BaseLookUpRate, AUE4_ProjectDCharacter), 0x0010000000020015);
 				UProperty* NewProp_BaseTurnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseTurnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BaseTurnRate, AUE4_ProjectDCharacter), 0x0010000000020015);
 				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, AUE4_ProjectDCharacter), 0x00400000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, AUE4_ProjectDCharacter), 0x00400000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AUE4_ProjectDCharacter_GetCurrentHealth(), "GetCurrentHealth"); // 3266054590
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AUE4_ProjectDCharacter_GetInitialHealth(), "GetInitialHealth"); // 3018000340
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AUE4_ProjectDCharacter_UpdateHealth(), "UpdateHealth"); // 2136484418
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -61,6 +143,14 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("UE4_ProjectDCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDCharacter.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_PlayerCurrentHealth, TEXT("BlueprintProtected"), TEXT(""));
+				MetaData->SetValue(NewProp_PlayerCurrentHealth, TEXT("Category"), TEXT("Health"));
+				MetaData->SetValue(NewProp_PlayerCurrentHealth, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDCharacter.h"));
+				MetaData->SetValue(NewProp_PlayerCurrentHealth, TEXT("ToolTip"), TEXT("UPROPERTY(VisibleAnywhere, Category = \"Health\")"));
+				MetaData->SetValue(NewProp_PlayerInitialHealth, TEXT("BlueprintProtected"), TEXT(""));
+				MetaData->SetValue(NewProp_PlayerInitialHealth, TEXT("Category"), TEXT("Health"));
+				MetaData->SetValue(NewProp_PlayerInitialHealth, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDCharacter.h"));
+				MetaData->SetValue(NewProp_PlayerInitialHealth, TEXT("ToolTip"), TEXT("End of APawn interface"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("Category"), TEXT("Camera"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDCharacter.h"));
 				MetaData->SetValue(NewProp_BaseLookUpRate, TEXT("ToolTip"), TEXT("Base look up/down rate, in deg/sec. Other scaling may affect final rate."));
@@ -103,6 +193,10 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassFlags |= 0x2088028C;
 
 
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_CurrentWidget = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CurrentWidget"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CurrentWidget, AUE4_ProjectDGameMode), 0x0020080000000000, Z_Construct_UClass_UUserWidget_NoRegister());
+				UProperty* NewProp_HUDWidgetClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("HUDWidgetClass"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(HUDWidgetClass, AUE4_ProjectDGameMode), 0x0024080000010005, Z_Construct_UClass_UUserWidget_NoRegister(), UClass::StaticClass());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -112,6 +206,12 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDGameMode.h"));
 				MetaData->SetValue(OuterClass, TEXT("OnlyDefaultConstructorDeclared"), TEXT(""));
 				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
+				MetaData->SetValue(NewProp_CurrentWidget, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDGameMode.h"));
+				MetaData->SetValue(NewProp_CurrentWidget, TEXT("ToolTip"), TEXT("instance of HUD"));
+				MetaData->SetValue(NewProp_HUDWidgetClass, TEXT("BlueprintProtected"), TEXT("true"));
+				MetaData->SetValue(NewProp_HUDWidgetClass, TEXT("Category"), TEXT("Health"));
+				MetaData->SetValue(NewProp_HUDWidgetClass, TEXT("ModuleRelativePath"), TEXT("UE4_ProjectDGameMode.h"));
+				MetaData->SetValue(NewProp_HUDWidgetClass, TEXT("ToolTip"), TEXT("The Widget class to use for HUD"));
 #endif
 			}
 		}
@@ -128,8 +228,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/UE4_ProjectD")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x0F2B59D2;
-			Guid.B = 0xF50C21E0;
+			Guid.A = 0x980E364F;
+			Guid.B = 0x8E5EA048;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

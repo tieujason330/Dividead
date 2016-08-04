@@ -1,0 +1,941 @@
+﻿Log file open, 07/28/16 20:44:42
+LogInit:Display: Running engine for game: UE4_ProjectD
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-2018635312) SRandInit(-2018635311).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.077514
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.07.29-03.44.42:499][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.29-03.44.42:499][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.07.29-03.44.42:507][  0]LogInit: Computer: JASON-PC
+[2016.07.29-03.44.42:507][  0]LogInit: User: Jason
+[2016.07.29-03.44.42:507][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.07.29-03.44.42:507][  0]LogInit: High frequency timer resolution =3.215419 MHz
+[2016.07.29-03.44.42:508][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.07.29-03.44.42:508][  0]LogMemory: Platform Memory Stats for Windows
+[2016.07.29-03.44.42:508][  0]LogMemory: Process Physical Memory: 189.86 MB used, 189.86 MB peak
+[2016.07.29-03.44.42:508][  0]LogMemory: Process Virtual Memory: 196.02 MB used, 196.02 MB peak
+[2016.07.29-03.44.42:508][  0]LogMemory: Physical Memory: 4024.43 MB used, 8085.93 MB total
+[2016.07.29-03.44.42:508][  0]LogMemory: Virtual Memory: 523.06 MB used, 8388608.00 MB total
+[2016.07.29-03.44.42:539][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.07.29-03.44.42:971][  0]LogD3D11RHI: D3D11 adapters:
+[2016.07.29-03.44.42:988][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 560 Ti  ' (Feature Level 11_0)
+[2016.07.29-03.44.42:988][  0]LogD3D11RHI:       978/0/3071 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.07.29-03.44.42:991][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 3000' (Feature Level 10_0)
+[2016.07.29-03.44.42:991][  0]LogD3D11RHI:       64/0/1632 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2016.07.29-03.44.42:991][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.07.29-03.44.42:995][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.07.29-03.44.42:995][  0]LogD3D11RHI:     GPU DeviceId: 0x1200 (for the marketing name, search the web for "GPU Device Id")
+[2016.07.29-03.44.42:995][  0]LogWindows: EnumDisplayDevices:
+[2016.07.29-03.44.42:996][  0]LogWindows:    0. 'NVIDIA GeForce GTX 560 Ti  ' (P:0 D:1)
+[2016.07.29-03.44.42:996][  0]LogWindows:    1. 'NVIDIA GeForce GTX 560 Ti  ' (P:1 D:1)
+[2016.07.29-03.44.42:996][  0]LogWindows:    2. 'Intel(R) HD Graphics 3000' (P:0 D:1)
+[2016.07.29-03.44.42:996][  0]LogWindows:    3. 'Intel(R) HD Graphics 3000' (P:0 D:0)
+[2016.07.29-03.44.42:996][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2016.07.29-03.44.42:996][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.07.29-03.44.42:996][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.07.29-03.44.42:996][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:2 
+[2016.07.29-03.44.42:996][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 560 Ti  
+[2016.07.29-03.44.42:996][  0]LogD3D11RHI:   Driver Version: 365.10 (internal:10.18.13.6510, unified:365.10)
+[2016.07.29-03.44.42:996][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.07.29-03.44.42:996][  0]LogRHI: Texture pool is 684 MB (70% of 978 MB)
+[2016.07.29-03.44.43:003][  0]LogD3D11RHI: Async texture creation enabled
+[2016.07.29-03.44.43:017][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.07.29-03.44.43:017][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/Shaders/WorkingDirectory/8044/).
+[2016.07.29-03.44.43:017][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Jason/AppData/Local/Temp/UnrealShaderWorkingDir/4CCEE2A04FCFB500A74C96B2BEA3D0C8/'.
+[2016.07.29-03.44.43:017][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.07.29-03.44.44:753][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.07.29-03.44.44:763][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.07.29-03.44.44:773][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.07.29-03.44.44:787][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.07.29-03.44.44:797][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.07.29-03.44.44:807][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.07.29-03.44.44:817][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.07.29-03.44.44:827][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.07.29-03.44.44:837][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.07.29-03.44.44:846][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.07.29-03.44.44:856][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.07.29-03.44.44:875][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.07.29-03.44.44:875][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.07.29-03.44.44:875][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.07.29-03.44.44:897][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.07.29-03.44.44:905][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.07.29-03.44.44:913][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.07.29-03.44.44:921][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.07.29-03.44.44:930][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.07.29-03.44.44:930][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.07.29-03.44.45:009][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.07.29-03.44.45:779][  0]LogDerivedDataCache: Loaded boot cache 0.76s 50MB C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.29-03.44.45:779][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.07.29-03.44.45:780][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.07.29-03.44.45:780][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.07.29-03.44.45:780][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.07.29-03.44.45:780][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.07.29-03.44.45:843][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.07.29-03.44.45:889][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Jason/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.07.29-03.44.57:646][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.29-03.44.57:813][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.07.29-03.45.03:131][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.07.29-03.45.03:132][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.07.29-03.45.03:132][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.07.29-03.45.09:241][  0]LogAssetRegistry: FAssetRegistry took 0.0334 seconds to start up
+[2016.07.29-03.45.09:374][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.09:874][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.10:375][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.10:875][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.11:453][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.11:953][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.12:453][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.12:953][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.13:453][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.13:953][  0]LogFileManager:Warning: MoveFile was unable to move '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin', retrying in .5s...
+[2016.07.29-03.45.14:453][  0]LogFileManager:Error: Error moving file '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/AssetRegistryCache/5a627529.bin'.
+[2016.07.29-03.45.14:474][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 5.104937 seconds
+[2016.07.29-03.45.14:480][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.07.29-03.45.14:480][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.07.29-03.45.14:480][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.07.29-03.45.14:490][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.07.29-03.45.20:821][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.29-03.45.20:821][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.29-03.45.45:818][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.07.29-03.45.50:873][  0]SourceControl: Info Source control is disabled
+[2016.07.29-03.45.51:190][  0]SourceControl: Info Source control is disabled
+[2016.07.29-03.45.51:247][  0]SourceControl: Info Source control is disabled
+[2016.07.29-03.45.51:307][  0]SourceControl: Info Source control is disabled
+[2016.07.29-03.45.53:013][  0]LogEngine: Initializing Engine...
+[2016.07.29-03.45.53:803][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.07.29-03.45.53:810][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.07.29-03.45.55:000][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.07.29-03.45.55:341][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.29-03.45.55:395][  0]LogInit: FAudioDevice initialized.
+[2016.07.29-03.45.55:459][  0]LogDerivedDataCache: Saved boot cache 0.06s 50MB C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.29-03.45.55:471][  0]LogInit: Texture streaming: Enabled
+[2016.07.29-03.45.55:833][  0]LogInit: Transaction tracking system initialized
+[2016.07.29-03.45.56:247][  0]BlueprintLog: New page: Editor Load
+[2016.07.29-03.45.58:473][  0]LocalizationService: Info Localization service is disabled
+[2016.07.29-03.46.02:726][  0]LogConsoleResponse:Display: 
+[2016.07.29-03.46.06:362][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/' took 0.02s
+[2016.07.29-03.46.06:362][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.07.29-03.46.06:362][  0]LogCook:Display: Mobile HDR setting 1
+[2016.07.29-03.46.10:185][  0]SourceControl: Info Source control is disabled
+[2016.07.29-03.46.10:257][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.07.29-03.46.10:354][  0]LightingResults: New page: Lighting Build
+[2016.07.29-03.46.10:739][  0]MapCheck: New page: Map Check
+[2016.07.29-03.46.10:739][  0]LightingResults: New page: Lighting Build
+[2016.07.29-03.46.12:779][  0]LogTexture:Display: Building textures: HQ_Lightmap0_6 (AutoDXT)
+[2016.07.29-03.46.13:427][  0]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2016.07.29-03.46.14:239][  0]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
+[2016.07.29-03.46.14:513][  0]LogTexture:Display: Building textures: HQ_Lightmap1_3 (AutoDXT)
+[2016.07.29-03.46.14:564][  0]LogTexture:Display: Building textures: HQ_Lightmap1_4 (AutoDXT)
+[2016.07.29-03.46.14:627][  0]LogTexture:Display: Building textures: HQ_Lightmap1_5 (AutoDXT)
+[2016.07.29-03.46.14:870][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.29-03.46.16:072][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.07.29-03.46.16:153][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.07.29-03.46.16:225][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 72.548ms to complete.
+[2016.07.29-03.46.16:225][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 5.992
+[2016.07.29-03.46.18:219][  0]LogCollectionManager: Loaded 0 collections in 0.004135 seconds
+[2016.07.29-03.46.18:346][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Collections/' took 0.01s
+[2016.07.29-03.46.18:346][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Developers/Jason/Collections/' took 0.01s
+[2016.07.29-03.46.18:346][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Collections/' took 0.01s
+[2016.07.29-03.46.18:346][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.07.29-03.46.18:388][  0]LogContentBrowser: Native class hierarchy populated in 0.0380 seconds. Added 2049 classes and 371 folders.
+[2016.07.29-03.46.18:501][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.07.29-03.46.18:501][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.07.29-03.46.18:502][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0014 seconds. Added 12 classes and 0 folders.
+[2016.07.29-03.46.18:569][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0013 seconds. Added 0 classes and 0 folders.
+[2016.07.29-03.46.20:521][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0026 seconds. Added 0 classes and 0 folders.
+[2016.07.29-03.46.20:607][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0028 seconds. Added 1 classes and 2 folders.
+[2016.07.29-03.46.22:712][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.07.29-03.46.22:985][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.07.29-03.46.23:526][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0026 seconds. Added 1 classes and 2 folders.
+[2016.07.29-03.46.23:526][  0]LogLoad: Full Startup: 101.76 seconds (BP compile: 0.91 seconds)
+[2016.07.29-03.46.23:526][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.07.29-03.46.23:526][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.07.29-03.46.23:917][  0]LogOcInput: OculusInput pre-init called
+[2016.07.29-03.46.24:219][  0]LogContentStreaming: Texture pool size now 400 MB
+[2016.07.29-03.46.26:021][  0]LogRenderer: Reallocating scene render targets to support 1192x620 (Frame:2).
+[2016.07.29-03.46.27:689][  3]LogAssetRegistry: Asset discovery search completed in 78.4683 seconds
+[2016.07.29-03.46.27:689][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.07.29-03.46.27:713][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.023287 seconds (updated 0 objects)
+[2016.07.29-03.48.49:172][430]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-03.48.49:193][430]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.29-03.48.49:317][430]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 28, 2016, 12:48:49 PM)
+[2016.07.29-03.48.49:317][430]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.29-03.48.49:337][430]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020167s)
+[2016.07.29-03.48.49:338][430]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.29-03.48.49:338][430]LogPlayLevel: PIE: World Init took: (0.000880s)
+[2016.07.29-03.48.49:339][430]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021424s)
+[2016.07.29-03.48.49:361][430]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.29-03.48.49:368][430]LogInit: FAudioDevice initialized.
+[2016.07.29-03.48.49:500][430]LogWorld: Game class is 'UE4_ProjectDGameMode'
+[2016.07.29-03.48.49:557][430]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.28-20.48.49
+[2016.07.29-03.48.49:564][430]LogWorld: Bringing up level for play took: 0.012325
+[2016.07.29-03.48.49:631][430]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0026 seconds. Added 11 classes and 0 folders.
+[2016.07.29-03.48.49:643][430]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.441
+[2016.07.29-03.48.49:644][430]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-03.49.00:695][571]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-03.49.00:838][571]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-03.52.20:380][295]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0033 seconds. Added 111 classes and 0 folders.
+[2016.07.29-03.55.25:910][657]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.26:086][658]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.26:419][659]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.26:752][660]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.27:086][661]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.27:419][662]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.27:752][663]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.28:086][664]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.28:421][665]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.28:751][666]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.29:085][667]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.29:419][668]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.29:752][669]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.30:085][670]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.30:419][671]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.30:752][672]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.31:085][673]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.31:419][674]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.31:752][675]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.32:085][676]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.32:419][677]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.32:752][678]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.33:085][679]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.33:419][680]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.33:752][681]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.34:085][682]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.34:419][683]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.34:752][684]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.35:085][685]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.35:419][686]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.35:752][687]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.36:085][688]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.36:419][689]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.36:752][690]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.37:085][691]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.37:418][692]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.37:752][693]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.38:085][694]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.38:418][695]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.38:752][696]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.39:085][697]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.39:419][698]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.39:768][699]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.40:085][700]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.40:419][701]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.40:751][702]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.41:084][703]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.41:419][704]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.41:753][705]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.42:086][706]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.42:419][707]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.42:753][708]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.43:086][709]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.43:418][710]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.43:753][711]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.44:085][712]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.44:419][713]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.44:752][714]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.45:086][715]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.45:419][716]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.45:751][717]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.46:086][718]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.46:419][719]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.46:753][720]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.47:086][721]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.47:419][722]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.47:752][723]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.48:086][724]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.48:419][725]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.48:752][726]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.49:086][727]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.49:417][728]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.49:752][729]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.50:086][730]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.50:419][731]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.50:763][732]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.51:086][733]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.51:419][734]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.51:752][735]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.52:086][736]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.52:419][737]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.52:752][738]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.53:086][739]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.53:419][740]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.53:752][741]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.54:086][742]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.54:418][743]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.54:752][744]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.55:086][745]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.55:419][746]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.55:752][747]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.56:086][748]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.56:419][749]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.56:752][750]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.57:086][751]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.57:420][752]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.57:753][753]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.58:086][754]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.58:420][755]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.58:753][756]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.59:084][757]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.59:420][758]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.55.59:753][759]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.00:086][760]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.00:420][761]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.00:753][762]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.01:086][763]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.01:420][764]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.01:753][765]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.02:086][766]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.02:420][767]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.02:753][768]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.03:086][769]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.03:420][770]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.03:753][771]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.04:086][772]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.04:420][773]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.56.32:641][774]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-03.57.06:282][775]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h'
+[2016.07.29-03.57.07:619][775]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.cpp'
+[2016.07.29-04.06.41:674][500]MapCheck: New page: Map Check
+[2016.07.29-04.06.41:857][500]Cmd: MAP REBUILD ALLVISIBLE
+[2016.07.29-04.06.41:857][500]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2016.07.29-04.06.42:101][500]LightingResults: New page: Lighting Build - Jul 28, 2016, 1:06:42 PM
+[2016.07.29-04.06.42:816][500]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.07.29-04.06.43:270][500]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.07.29-04.06.43:710][500]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.07.29-04.06.46:721][500]LogSwarmInterface:Error: [TryOpenConnection] Waiting for the agent to start up ...
+[2016.07.29-04.06.47:091][500]LogSwarmInterface:Error: System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:8008
+
+Server stack trace: 
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Runtime.Remoting.Channels.RemoteConnection.CreateNewSocket(EndPoint ipEndPoint)
+   at System.Runtime.Remoting.Channels.SocketCache.GetSocket(String machinePortAndSid, Boolean openNew)
+   at System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.SendRequestWithRetry(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream)
+   at System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.AsyncProcessRequest(IClientChannelSinkStack sinkStack, IMessage msg, ITransportHeaders headers, Stream stream)
+   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at NSwarm.IAgentInterfaceWrapper.MethodDelegate.EndInvoke(Hashtable& OutParameters, IAsyncResult result)
+   at NSwarm.FSwarmInterface.TryOpenConnection(FConnectionCallback CallbackFunc, IntPtr CallbackData, ELogFlags LoggingFlags) in i:\Perforce2\UE4-Orion\Engine\Source\Editor\SwarmInterface\DotNET\SwarmInterface.cs:line 2811
+[2016.07.29-04.06.52:553][500]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.07.29-04.06.52:554][500]LogSwarmInterface: [TryOpenConnection] Local Process ID is 8044
+[2016.07.29-04.06.59:622][500]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.07.29-04.06.59:623][500]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.07.29-04.06.59:623][500]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.07.29-04.06.59:623][500]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.07.29-04.06.59:623][500]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.07.29-04.07.00:732][500]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2016.07.29-04.07.00:732][500]MapCheck: New page: ThirdPersonExampleMap - Jul 28, 2016, 1:07:00 PM
+[2016.07.29-04.07.00:851][500]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 118.767ms to complete.
+[2016.07.29-04.07.00:872][500]LogEditorBuildUtils: Build time 0:19
+[2016.07.29-04.07.10:283][991]Job is a success!
+[2016.07.29-04.07.11:445][992]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT)
+[2016.07.29-04.07.11:445][992]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2016.07.29-04.07.11:446][992]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2016.07.29-04.07.11:446][992]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT)
+[2016.07.29-04.07.11:446][992]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
+[2016.07.29-04.07.11:446][992]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
+[2016.07.29-04.07.11:656][992]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8)
+[2016.07.29-04.07.11:657][992]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8)
+[2016.07.29-04.07.12:050][992]Lightmass on JASON-PC: 7.87 sec total, 175 ms importing, 3 ms setup, 804 ms photons, 6.46 sec processing, 0 ms extra exporting [6/6 mappings]. Threads: 25.8 sec total, 14.1 sec processing.
+[2016.07.29-04.07.12:111][992]LogStaticLightingSystem: Illumination: 29.9 sec (1.01 sec encoding lightmaps, 207 ms encoding shadowmaps)
+[2016.07.29-04.07.12:111][992]LogStaticLightingSystem: Lightmap texture memory:  2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 4 textures
+[2016.07.29-04.07.12:112][992]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.07.29-04.07.12:590][993]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.07.29-04.07.12:590][993]MapCheck: New page: ThirdPersonExampleMap - Jul 28, 2016, 1:07:12 PM
+[2016.07.29-04.07.12:652][993]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 61.58ms to complete.
+[2016.07.29-04.07.29:695][149]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.07.29:718][150]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.07.33:775][151]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.07.56:896][152]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h'
+[2016.07.29-04.07.57:005][152]LogVSAccessor:Warning: Couldn't goto line number '0' in 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.cpp'
+[2016.07.29-04.07.58:456][153]LogSavePackage: Save=326.40ms
+[2016.07.29-04.07.58:456][153]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/ThirdPersonExampleMap_Auto1992E543641B7FEB76648399B82002A62.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap'
+[2016.07.29-04.07.58:459][153]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap
+[2016.07.29-04.07.58:460][153]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 1.244
+[2016.07.29-04.07.58:461][153]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.244
+[2016.07.29-04.08.04:891][173]LogTexture:Warning: Failed to stream mip data from the derived data cache for /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.HQ_Lightmap0_1. Streaming mips will be recached.
+[2016.07.29-04.08.04:894][173]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.07.29-04.12.42:218][344]Running C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject" -game -rocket -progress
+[2016.07.29-04.12.43:220][344]Discovering modules, targets and source code for project...
+[2016.07.29-04.12.59:861][344]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2016.07.29-04.12.59:909][344]Recompiling UE4_ProjectD...
+[2016.07.29-04.12.59:910][344]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 2241 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.13.28:236][344]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:13:28 PM
+[2016.07.29-04.13.28:236][344]CompilerResultsLog: Info Performing full C++ include scan (hot reloading a new target)
+[2016.07.29-04.13.28:236][344]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (no existing makefile)
+[2016.07.29-04.13.28:236][344]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.13.28:236][344]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.13.28:236][344]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.13.28:237][344]CompilerResultsLog:Error: Error C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h(30)  : Missing ';' in 'variable declaration'
+[2016.07.29-04.13.28:237][344]CompilerResultsLog:Error: Error Error: Failed to generate code for UE4_ProjectDEditor - error code: OtherCompilationError (5) 
+[2016.07.29-04.13.28:237][344]CompilerResultsLog: Info UnrealHeaderTool failed for target 'UE4_ProjectDEditor' (platform: Win64, module info: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest).
+[2016.07.29-04.13.28:237][344]CompilerResultsLog: Info Failed to write dependency cache: Access to the path 'C:\Users\DT\Documents\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor' is denied.
+[2016.07.29-04.13.28:237][344]LogMainFrame: MainFrame: Module compiling took 28.342 seconds
+[2016.07.29-04.13.28:259][344]Warning: HotReload failed, recompile failed
+[2016.07.29-04.13.28:269][344]Warning: RebindPackages failed because the compiler could not be started.
+[2016.07.29-04.14.02:142][497]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.02:157][498]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.02:489][499]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.10:009][500]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.22:863][501]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.22:880][502]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.26:804][503]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.26:825][504]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.27:154][505]LogVSAccessor:Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2016.07.29-04.14.36:617][506]LogVSAccessor:Warning: Couldn't set focus on Visual Studio.
+[2016.07.29-04.14.36:618][506]LogVSAccessor:Warning: Couldn't access Visual Studio
+[2016.07.29-04.14.36:620][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:621][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:622][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:623][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:624][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:625][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:625][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:625][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:625][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:625][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:625][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:625][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:723][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:723][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:724][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:724][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:724][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:724][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:725][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:748][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:748][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:749][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:749][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:749][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:749][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:750][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:751][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:751][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.14.36:751][506]LogVSAccessor:Warning: Couldn't access module table
+[2016.07.29-04.16.13:419][658]Recompiling UE4_ProjectD...
+[2016.07.29-04.16.13:420][658]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 1522 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.16.13:421][658]Warning: Starting HotReload took  0.6s.
+[2016.07.29-04.16.29:100][404]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2016.07.29-04.16.38:516][778]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:16:38 PM
+[2016.07.29-04.16.38:516][778]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (no existing makefile)
+[2016.07.29-04.16.38:516][778]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.16.38:516][778]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.07.29-04.16.38:516][778]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.16.38:517][778]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.16.38:517][778]CompilerResultsLog:Error: Error C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h(30)  : Missing ';' in 'variable declaration'
+[2016.07.29-04.16.38:517][778]CompilerResultsLog:Error: Error Error: Failed to generate code for UE4_ProjectDEditor - error code: OtherCompilationError (5) 
+[2016.07.29-04.16.38:517][778]CompilerResultsLog: Info UnrealHeaderTool failed for target 'UE4_ProjectDEditor' (platform: Win64, module info: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest).
+[2016.07.29-04.16.38:517][778]LogMainFrame: MainFrame: Module compiling took 25.196 seconds
+[2016.07.29-04.16.38:518][778]Warning: HotReload failed, recompile failed
+[2016.07.29-04.17.11:604][252]Recompiling UE4_ProjectD...
+[2016.07.29-04.17.11:604][252]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 3444 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.17.11:605][252]Warning: Starting HotReload took  0.3s.
+[2016.07.29-04.17.32:527][505]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:17:32 PM
+[2016.07.29-04.17.32:527][505]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (no existing makefile)
+[2016.07.29-04.17.32:528][505]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.17.32:528][505]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.07.29-04.17.32:528][505]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.17.32:528][505]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.17.32:528][505]CompilerResultsLog:Error: Error C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h(30)  : Missing ';' in 'variable declaration'
+[2016.07.29-04.17.32:528][505]CompilerResultsLog:Error: Error Error: Failed to generate code for UE4_ProjectDEditor - error code: OtherCompilationError (5) 
+[2016.07.29-04.17.32:529][505]CompilerResultsLog: Info UnrealHeaderTool failed for target 'UE4_ProjectDEditor' (platform: Win64, module info: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest).
+[2016.07.29-04.17.32:529][505]LogMainFrame: MainFrame: Module compiling took 21.074 seconds
+[2016.07.29-04.17.32:529][505]Warning: HotReload failed, recompile failed
+[2016.07.29-04.19.09:339][470]LogSavePackage: Save=584.61ms
+[2016.07.29-04.19.09:339][470]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/ThirdPersonExampleMap_Auto2D206138E4E115A5EFA127AA2AAD39B66.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto2.umap'
+[2016.07.29-04.19.09:501][470]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto2.umap
+[2016.07.29-04.19.09:554][470]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 2.967
+[2016.07.29-04.19.09:554][470]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 2.967
+[2016.07.29-04.19.13:830][480]MapCheck: New page: Map Check
+[2016.07.29-04.19.13:976][480]Cmd: MAP REBUILD ALLVISIBLE
+[2016.07.29-04.19.13:976][480]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2016.07.29-04.19.14:278][480]LightingResults: New page: Lighting Build - Jul 28, 2016, 1:19:14 PM
+[2016.07.29-04.19.14:295][480]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.07.29-04.19.14:297][480]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.07.29-04.19.14:298][480]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.07.29-04.19.14:335][480]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.07.29-04.19.14:335][480]LogSwarmInterface: [TryOpenConnection] Local Process ID is 8044
+[2016.07.29-04.19.19:467][480]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.07.29-04.19.19:468][480]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.07.29-04.19.19:468][480]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.07.29-04.19.19:468][480]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.07.29-04.19.19:468][480]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.07.29-04.19.25:232][480]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2016.07.29-04.19.25:232][480]MapCheck: New page: ThirdPersonExampleMap - Jul 28, 2016, 1:19:25 PM
+[2016.07.29-04.19.25:352][480]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 119.698ms to complete.
+[2016.07.29-04.19.25:443][480]LogEditorBuildUtils: Build time 0:11
+[2016.07.29-04.19.58:746][567]Job is a success!
+[2016.07.29-04.20.01:929][568]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.07.29-04.20.01:930][568]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
+[2016.07.29-04.20.01:930][568]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2016.07.29-04.20.01:930][568]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
+[2016.07.29-04.20.01:930][568]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2016.07.29-04.20.01:930][568]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
+[2016.07.29-04.20.02:470][568]LogTexture:Display: Building textures: ShadowMapTexture2D_5 (G8)
+[2016.07.29-04.20.02:470][568]LogTexture:Display: Building textures: ShadowMapTexture2D_4 (G8)
+[2016.07.29-04.20.02:556][568]LogStaticLightingSystem: Illumination: 47.8 sec (2.70 sec encoding lightmaps, 541 ms encoding shadowmaps)
+[2016.07.29-04.20.02:556][568]LogStaticLightingSystem: Lightmap texture memory:  2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 4 textures
+[2016.07.29-04.20.02:592][568]Lightmass on JASON-PC: 28.9 sec total, 1.03 sec importing, 71 ms setup, 3.90 sec photons, 17.6 sec processing, 0 ms extra exporting [6/6 mappings]. Threads: 1:10 min total, 27.0 sec processing.
+[2016.07.29-04.20.02:592][568]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.07.29-04.20.03:509][569]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.07.29-04.20.03:509][569]MapCheck: New page: ThirdPersonExampleMap - Jul 28, 2016, 1:20:03 PM
+[2016.07.29-04.20.03:655][569]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 144.685ms to complete.
+[2016.07.29-04.20.27:780][637]Recompiling UE4_ProjectD...
+[2016.07.29-04.20.27:781][637]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 1748 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.20.27:782][637]Warning: Starting HotReload took  0.1s.
+[2016.07.29-04.20.46:976][ 58]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:20:46 PM
+[2016.07.29-04.20.46:977][ 58]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (no existing makefile)
+[2016.07.29-04.20.46:977][ 58]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.20.46:977][ 58]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.07.29-04.20.46:977][ 58]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.20.46:977][ 58]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.20.46:977][ 58]CompilerResultsLog:Error: Error C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h(30)  : Missing ';' in 'variable declaration'
+[2016.07.29-04.20.46:978][ 58]CompilerResultsLog:Error: Error Error: Failed to generate code for UE4_ProjectDEditor - error code: OtherCompilationError (5) 
+[2016.07.29-04.20.46:978][ 58]CompilerResultsLog: Info UnrealHeaderTool failed for target 'UE4_ProjectDEditor' (platform: Win64, module info: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest).
+[2016.07.29-04.20.46:978][ 58]LogMainFrame: MainFrame: Module compiling took 19.274 seconds
+[2016.07.29-04.20.46:978][ 58]Warning: HotReload failed, recompile failed
+[2016.07.29-04.21.51:396][732]Recompiling UE4_ProjectD...
+[2016.07.29-04.21.51:396][732]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 8785 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.21.51:397][732]Warning: Starting HotReload took  0.1s.
+[2016.07.29-04.22.11:865][520]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:22:11 PM
+[2016.07.29-04.22.11:865][520]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (no existing makefile)
+[2016.07.29-04.22.11:865][520]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.22.11:865][520]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.07.29-04.22.11:866][520]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.22.11:866][520]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.22.11:866][520]CompilerResultsLog:Error: Error C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h(29)  : Unknown variable specifier 'BlueprintPure'
+[2016.07.29-04.22.11:866][520]CompilerResultsLog:Error: Error Error: Failed to generate code for UE4_ProjectDEditor - error code: OtherCompilationError (5) 
+[2016.07.29-04.22.11:866][520]CompilerResultsLog: Info UnrealHeaderTool failed for target 'UE4_ProjectDEditor' (platform: Win64, module info: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest).
+[2016.07.29-04.22.11:866][520]LogMainFrame: MainFrame: Module compiling took 20.516 seconds
+[2016.07.29-04.22.11:867][520]Warning: HotReload failed, recompile failed
+[2016.07.29-04.22.42:754][176]Recompiling UE4_ProjectD...
+[2016.07.29-04.22.42:754][176]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 5596 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.22.42:755][176]Warning: Starting HotReload took  0.3s.
+[2016.07.29-04.24.45:428][721]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:24:45 PM
+[2016.07.29-04.24.45:428][721]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (no existing makefile)
+[2016.07.29-04.24.45:428][721]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.24.45:428][721]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info Reflection code generated for UE4_ProjectDEditor in 11.8581174 seconds
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info Performing 5 actions (4 in parallel)
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info MyClass.cpp
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info UE4_ProjectD.generated.cpp
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info UE4_ProjectDGameMode.cpp
+[2016.07.29-04.24.45:429][721]CompilerResultsLog: Info UE4_ProjectDCharacter.cpp
+[2016.07.29-04.24.45:429][721]CompilerResultsLog:Error: Error C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp(43) : error C2065: 'PlayerInitialPower': undeclared identifier
+[2016.07.29-04.24.45:430][721]CompilerResultsLog:Error: Error C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp(44) : error C2065: 'PlayerCurrentPower': undeclared identifier
+[2016.07.29-04.24.45:430][721]CompilerResultsLog:Error: Error C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp(44) : error C2065: 'PlayerInitialPower': undeclared identifier
+[2016.07.29-04.24.45:430][721]LogMainFrame: MainFrame: Module compiling took 122.707 seconds
+[2016.07.29-04.24.45:430][721]Warning: HotReload failed, recompile failed
+[2016.07.29-04.25.54:411][688]Recompiling UE4_ProjectD...
+[2016.07.29-04.25.54:411][688]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 2148 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.25.54:429][688]Warning: Starting HotReload took  0.5s.
+[2016.07.29-04.26.40:053][151]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:26:40 PM
+[2016.07.29-04.26.40:053][151]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (working set of source files changed)
+[2016.07.29-04.26.40:053][151]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.26.40:054][151]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.07.29-04.26.40:054][151]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.26.40:054][151]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.26.40:054][151]CompilerResultsLog: Info Reflection code generated for UE4_ProjectDEditor in 13.6933743 seconds
+[2016.07.29-04.26.40:054][151]CompilerResultsLog: Info Performing 2 actions (4 in parallel)
+[2016.07.29-04.26.40:055][151]CompilerResultsLog: Info UE4_ProjectDCharacter.cpp
+[2016.07.29-04.26.40:055][151]CompilerResultsLog:Error: Error C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp(132) : error C2039: 'GetInitialPower': is not a member of 'AUE4_ProjectDCharacter'
+[2016.07.29-04.26.40:055][151]CompilerResultsLog:Error: Error c:\users\jason\desktop\github\projectd\ue4_projectd\source\ue4_projectd\UE4_ProjectDCharacter.h(7) : note: see declaration of 'AUE4_ProjectDCharacter'
+[2016.07.29-04.26.40:055][151]CompilerResultsLog:Error: Error C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp(134) : error C2065: 'PlayerInitialHealth': undeclared identifier
+[2016.07.29-04.26.40:055][151]CompilerResultsLog:Error: Error C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp(137) : error C2039: 'GetCurrentPower': is not a member of 'AUE4_ProjectDCharacter'
+[2016.07.29-04.26.40:055][151]CompilerResultsLog:Error: Error c:\users\jason\desktop\github\projectd\ue4_projectd\source\ue4_projectd\UE4_ProjectDCharacter.h(7) : note: see declaration of 'AUE4_ProjectDCharacter'
+[2016.07.29-04.26.40:056][151]CompilerResultsLog:Error: Error C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Source\UE4_ProjectD\UE4_ProjectDCharacter.cpp(139) : error C2065: 'PlayerCurrentHealth': undeclared identifier
+[2016.07.29-04.26.40:056][151]CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Binaries\Win64\UE4Editor-UE4_ProjectD-2148.dll
+[2016.07.29-04.26.40:056][151]CompilerResultsLog: Info Total build time: 40.65 seconds
+[2016.07.29-04.26.40:056][151]LogMainFrame: MainFrame: Module compiling took 45.665 seconds
+[2016.07.29-04.26.40:056][151]Warning: HotReload failed, recompile failed
+[2016.07.29-04.27.12:365][450]Recompiling UE4_ProjectD...
+[2016.07.29-04.27.12:366][450]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 5041 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.07.29-04.27.12:367][450]Warning: Starting HotReload took  0.1s.
+[2016.07.29-04.27.58:560][633]CompilerResultsLog: New page: Compilation - Jul 28, 2016, 1:27:58 PM
+[2016.07.29-04.27.58:561][633]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (working set of source files changed)
+[2016.07.29-04.27.58:561][633]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.07.29-04.27.58:561][633]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.07.29-04.27.58:561][633]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.07.29-04.27.58:561][633]CompilerResultsLog: Info Reflection code generated for UE4_ProjectDEditor in 8.014799 seconds
+[2016.07.29-04.27.58:561][633]CompilerResultsLog: Info Performing 2 actions (4 in parallel)
+[2016.07.29-04.27.58:562][633]CompilerResultsLog: Info UE4_ProjectDCharacter.cpp
+[2016.07.29-04.27.58:562][633]CompilerResultsLog: Info [2/2] Link UE4Editor-UE4_ProjectD-5041.dll
+[2016.07.29-04.27.58:562][633]CompilerResultsLog: Info    Creating library C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD-5041.lib and object C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD-5041.exp
+[2016.07.29-04.27.58:562][633]CompilerResultsLog: Info Total build time: 45.13 seconds
+[2016.07.29-04.27.58:562][633]LogMainFrame: MainFrame: Module compiling took 46.252 seconds
+[2016.07.29-04.28.01:446][633]LogClass: Could not find existing class UE4_ProjectDCharacter in package /Script/UE4_ProjectD for HotReload, assuming new class
+[2016.07.29-04.28.01:636][633]LogClass: Function GetCurrentHealth is new.
+[2016.07.29-04.28.01:637][633]LogClass: Function GetInitialHealth is new.
+[2016.07.29-04.28.01:637][633]LogClass: Function UpdateHealth is new.
+[2016.07.29-04.28.01:892][633]LogHotReload: Re-instancing UE4_ProjectDCharacter after hot-reload.
+[2016.07.29-04.28.04:716][633]LogContentBrowser: Native class hierarchy updated for 'UE4_ProjectD' in 0.1578 seconds. Added 2 classes and 2 folders.
+[2016.07.29-04.28.04:719][633]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.07.29-04.28.06:622][633]LogContentBrowser: Native class hierarchy populated in 0.0146 seconds. Added 2051 classes and 375 folders.
+[2016.07.29-04.28.06:863][633]Warning: HotReload took 54.6s.
+[2016.07.29-04.28.17:521][802]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.28.17:570][802]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.29-04.28.17:571][802]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 28, 2016, 1:28:17 PM)
+[2016.07.29-04.28.17:841][802]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.29-04.28.18:572][802]LogPlayLevel: PIE: StaticDuplicateObject took: (0.730366s)
+[2016.07.29-04.28.18:606][802]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.29-04.28.18:654][802]LogPlayLevel: PIE: World Init took: (0.081891s)
+[2016.07.29-04.28.18:654][802]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (1.082509s)
+[2016.07.29-04.28.19:094][802]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.29-04.28.19:378][802]LogInit: FAudioDevice initialized.
+[2016.07.29-04.28.20:077][802]LogWorld: Game class is 'UE4_ProjectDGameMode'
+[2016.07.29-04.28.20:121][802]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.28-21.28.20
+[2016.07.29-04.28.20:249][802]LogWorld: Bringing up level for play took: 0.005225
+[2016.07.29-04.28.20:790][802]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 2.655
+[2016.07.29-04.28.20:790][802]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.28.30:669][204]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.28.30:950][204]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.28.40:143][763]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.28.40:144][763]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.29-04.28.40:144][763]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 28, 2016, 1:28:40 PM)
+[2016.07.29-04.28.40:144][763]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.29-04.28.40:148][763]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003989s)
+[2016.07.29-04.28.40:150][763]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.29-04.28.40:150][763]LogPlayLevel: PIE: World Init took: (0.001135s)
+[2016.07.29-04.28.40:150][763]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.005884s)
+[2016.07.29-04.28.40:269][763]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.29-04.28.40:279][763]LogInit: FAudioDevice initialized.
+[2016.07.29-04.28.40:390][763]LogWorld: Game class is 'UE4_ProjectDGameMode'
+[2016.07.29-04.28.40:396][763]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.28-21.28.40
+[2016.07.29-04.28.40:397][763]LogWorld: Bringing up level for play took: 0.005313
+[2016.07.29-04.28.40:400][763]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.266
+[2016.07.29-04.28.40:400][763]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.28.48:872][ 75]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.28.49:011][ 75]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.29.40:872][ 89]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.29.40:873][ 89]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.29-04.29.40:873][ 89]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 28, 2016, 1:29:40 PM)
+[2016.07.29-04.29.40:873][ 89]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.29-04.29.40:877][ 89]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003883s)
+[2016.07.29-04.29.40:878][ 89]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.29-04.29.40:878][ 89]LogPlayLevel: PIE: World Init took: (0.001029s)
+[2016.07.29-04.29.40:879][ 89]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.005539s)
+[2016.07.29-04.29.40:982][ 89]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.29-04.29.40:989][ 89]LogInit: FAudioDevice initialized.
+[2016.07.29-04.29.41:070][ 89]LogWorld: Game class is 'UE4_ProjectDGameMode'
+[2016.07.29-04.29.41:075][ 89]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.28-21.29.41
+[2016.07.29-04.29.41:076][ 89]LogWorld: Bringing up level for play took: 0.004958
+[2016.07.29-04.29.41:078][ 89]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.943
+[2016.07.29-04.29.41:078][ 89]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.29.51:603][805]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.29.51:729][805]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.29-04.30.38:444][421]LogSavePackage: Save=211.32ms
+[2016.07.29-04.30.38:444][421]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/ThirdPersonExampleMap_Auto38BC4D74C400BE5C3CDD14880B34638C7.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto3.umap'
+[2016.07.29-04.30.38:446][421]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto3.umap
+[2016.07.29-04.30.38:448][421]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.886
+[2016.07.29-04.30.38:448][421]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.886
+[2016.07.29-04.34.55:599][303]LogSavePackage: Save=595.17ms
+[2016.07.29-04.34.55:600][303]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/ThirdPersonExampleMap86310E5D4F1302033F82C2BE969C2517.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2016.07.29-04.34.55:698][303]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap
+[2016.07.29-04.34.55:867][303]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.850
+[2016.07.29-04.34.58:862][304]Cmd: QUIT_EDITOR
+[2016.07.29-04.35.02:860][304]LogExit: Preparing to exit.
+[2016.07.29-04.35.05:959][304]LogExit: Editor shut down
+[2016.07.29-04.35.05:960][304]LogExit: Transaction tracking system shut down
+[2016.07.29-04.35.17:291][304]LogObj: Freed 0b from 0 cluster array pools.
+[2016.07.29-04.35.17:340][304]LogExit: Object subsystem successfully closed.
+[2016.07.29-04.35.19:522][304]LogD3D11RHI: Shutdown
+[2016.07.29-04.35.19:572][304]LogD3D11RHI: CleanupD3DDevice
+[2016.07.29-04.35.20:939][304]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.07.29-04.35.24:108][304]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (217)
+[2016.07.29-04.35.24:149][304]LogModuleManager: Shutting down and abandoning module BlueprintGraph (216)
+[2016.07.29-04.35.24:149][304]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (215)
+[2016.07.29-04.35.24:149][304]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (214)
+[2016.07.29-04.35.24:162][304]LogModuleManager: Shutting down and abandoning module CrashTracker (213)
+[2016.07.29-04.35.24:162][304]LogModuleManager: Shutting down and abandoning module SceneOutliner (212)
+[2016.07.29-04.35.24:162][304]LogModuleManager: Shutting down and abandoning module WidgetCarousel (211)
+[2016.07.29-04.35.24:227][304]LogModuleManager: Shutting down and abandoning module AddContentDialog (210)
+[2016.07.29-04.35.24:360][304]LogModuleManager: Shutting down and abandoning module GameplayTags (209)
+[2016.07.29-04.35.24:360][304]LogModuleManager: Shutting down and abandoning module EditorWidgets (208)
+[2016.07.29-04.35.24:360][304]LogModuleManager: Shutting down and abandoning module CollectionManager (207)
+[2016.07.29-04.35.24:396][304]LogModuleManager: Shutting down and abandoning module StatsViewer (206)
+[2016.07.29-04.35.24:431][304]LogModuleManager: Shutting down and abandoning module FoliageEdit (205)
+[2016.07.29-04.35.24:474][304]LogModuleManager: Shutting down and abandoning module LandscapeEditor (204)
+[2016.07.29-04.35.24:570][304]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (203)
+[2016.07.29-04.35.24:570][304]LogModuleManager: Shutting down and abandoning module ActorPickerMode (202)
+[2016.07.29-04.35.24:570][304]LogModuleManager: Shutting down and abandoning module GeometryMode (201)
+[2016.07.29-04.35.24:570][304]LogModuleManager: Shutting down and abandoning module TextureAlignMode (200)
+[2016.07.29-04.35.24:570][304]LogModuleManager: Shutting down and abandoning module BspMode (199)
+[2016.07.29-04.35.24:661][304]LogModuleManager: Shutting down and abandoning module HardwareSurvey (198)
+[2016.07.29-04.35.24:695][304]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (197)
+[2016.07.29-04.35.24:695][304]LogModuleManager: Shutting down and abandoning module SequenceRecorder (196)
+[2016.07.29-04.35.24:734][304]LogModuleManager: Shutting down and abandoning module AutomationWorker (195)
+[2016.07.29-04.35.24:734][304]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (194)
+[2016.07.29-04.35.24:767][304]LogModuleManager: Shutting down and abandoning module PlacementMode (193)
+[2016.07.29-04.35.24:832][304]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (192)
+[2016.07.29-04.35.25:198][304]LogModuleManager: Shutting down and abandoning module CharacterAI (191)
+[2016.07.29-04.35.25:198][304]LogModuleManager: Shutting down and abandoning module SmartSnapping (190)
+[2016.07.29-04.35.25:198][304]LogModuleManager: Shutting down and abandoning module SessionServices (189)
+[2016.07.29-04.35.25:198][304]LogModuleManager: Shutting down and abandoning module ViewportSnapping (188)
+[2016.07.29-04.35.25:198][304]LogModuleManager: Shutting down and abandoning module LogVisualizer (187)
+[2016.07.29-04.35.25:265][304]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (186)
+[2016.07.29-04.35.25:265][304]LogModuleManager: Shutting down and abandoning module IntroTutorials (185)
+[2016.07.29-04.35.25:297][304]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (184)
+[2016.07.29-04.35.25:297][304]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (183)
+[2016.07.29-04.35.25:309][304]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (182)
+[2016.07.29-04.35.25:309][304]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (181)
+[2016.07.29-04.35.25:541][304]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (180)
+[2016.07.29-04.35.25:612][304]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (179)
+[2016.07.29-04.35.25:612][304]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (178)
+[2016.07.29-04.35.25:612][304]LogModuleManager: Shutting down and abandoning module MergeActors (177)
+[2016.07.29-04.35.25:672][304]LogModuleManager: Shutting down and abandoning module SizeMap (176)
+[2016.07.29-04.35.25:672][304]LogModuleManager: Shutting down and abandoning module TreeMap (175)
+[2016.07.29-04.35.25:711][304]LogModuleManager: Shutting down and abandoning module ReferenceViewer (174)
+[2016.07.29-04.35.25:756][304]LogModuleManager: Shutting down and abandoning module LocalizationService (173)
+[2016.07.29-04.35.25:838][304]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (172)
+[2016.07.29-04.35.25:898][304]LogModuleManager: Shutting down and abandoning module HardwareTargeting (171)
+[2016.07.29-04.35.25:939][304]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (170)
+[2016.07.29-04.35.25:975][304]LogModuleManager: Shutting down and abandoning module UndoHistory (169)
+[2016.07.29-04.35.25:983][304]LogModuleManager: Shutting down and abandoning module UserFeedback (168)
+[2016.07.29-04.35.25:983][304]LogModuleManager: Shutting down and abandoning module XmlParser (167)
+[2016.07.29-04.35.25:998][304]LogModuleManager: Shutting down and abandoning module Blutility (166)
+[2016.07.29-04.35.26:013][304]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (165)
+[2016.07.29-04.35.26:026][304]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (164)
+[2016.07.29-04.35.26:026][304]LogModuleManager: Shutting down and abandoning module InputBindingEditor (163)
+[2016.07.29-04.35.26:120][304]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (162)
+[2016.07.29-04.35.26:121][304]LogModuleManager: Shutting down and abandoning module SettingsEditor (161)
+[2016.07.29-04.35.26:189][304]LogModuleManager: Shutting down and abandoning module ProjectLauncher (160)
+[2016.07.29-04.35.26:224][304]LogModuleManager: Shutting down and abandoning module SessionFrontend (159)
+[2016.07.29-04.35.26:281][304]LogModuleManager: Shutting down and abandoning module ProfilerClient (158)
+[2016.07.29-04.35.26:300][304]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (157)
+[2016.07.29-04.35.26:300][304]LogModuleManager: Shutting down and abandoning module DeviceManager (156)
+[2016.07.29-04.35.26:388][304]LogModuleManager: Shutting down and abandoning module AutomationController (155)
+[2016.07.29-04.35.26:424][304]LogModuleManager: Shutting down and abandoning module AutomationWindow (154)
+[2016.07.29-04.35.26:452][304]LogModuleManager: Shutting down and abandoning module Layers (153)
+[2016.07.29-04.35.26:511][304]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (152)
+[2016.07.29-04.35.26:511][304]LogModuleManager: Shutting down and abandoning module DetailCustomizations (151)
+[2016.07.29-04.35.26:561][304]LogModuleManager: Shutting down and abandoning module PackagesDialog (150)
+[2016.07.29-04.35.26:562][304]LogModuleManager: Shutting down and abandoning module Persona (149)
+[2016.07.29-04.35.26:781][304]LogModuleManager: Shutting down and abandoning module Kismet (148)
+[2016.07.29-04.35.26:842][304]LogModuleManager: Shutting down and abandoning module GraphEditor (147)
+[2016.07.29-04.35.26:962][304]LogModuleManager: Shutting down and abandoning module ClassViewer (146)
+[2016.07.29-04.35.26:964][304]LogModuleManager: Shutting down and abandoning module Toolbox (145)
+[2016.07.29-04.35.26:994][304]LogModuleManager: Shutting down and abandoning module ModuleUI (144)
+[2016.07.29-04.35.27:079][304]LogModuleManager: Shutting down and abandoning module MovieSceneTools (143)
+[2016.07.29-04.35.27:233][304]LogModuleManager: Shutting down and abandoning module OutputLog (142)
+[2016.07.29-04.35.27:233][304]LogModuleManager: Shutting down and abandoning module GammaUI (141)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module Documentation (140)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (139)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module AnalyticsET (138)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module Analytics (137)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module PortalServices (136)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module PortalRpc (135)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module MessagingRpc (134)
+[2016.07.29-04.35.27:338][304]LogModuleManager: Shutting down and abandoning module GameplayDebugger (133)
+[2016.07.29-04.35.27:371][304]LogModuleManager: Shutting down and abandoning module AITestSuite (132)
+[2016.07.29-04.35.27:413][304]LogModuleManager: Shutting down and abandoning module AIModule (131)
+[2016.07.29-04.35.27:413][304]LogModuleManager: Shutting down and abandoning module ProfilerService (130)
+[2016.07.29-04.35.27:820][304]LogModuleManager: Shutting down and abandoning module TaskGraph (129)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module SlateRemote (128)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module SteamVRController (127)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module SteamVR (126)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (125)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module OculusLibrary (124)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module OculusInput (123)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (122)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module CableComponent (121)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (120)
+[2016.07.29-04.35.27:885][304]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (119)
+[2016.07.29-04.35.28:021][304]LogModuleManager: Shutting down and abandoning module HTML5Networking (118)
+[2016.07.29-04.35.28:021][304]LogModuleManager: Shutting down and abandoning module SuperSearch (117)
+[2016.07.29-04.35.28:022][304]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (116)
+[2016.07.29-04.35.28:022][304]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (115)
+[2016.07.29-04.35.28:022][304]LogModuleManager: Shutting down and abandoning module PluginBrowser (114)
+[2016.07.29-04.35.28:079][304]LogModuleManager: Shutting down and abandoning module EpicSurvey (113)
+[2016.07.29-04.35.28:079][304]LogModuleManager: Shutting down and abandoning module DesktopPlatform (112)
+[2016.07.29-04.35.28:164][304]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (111)
+[2016.07.29-04.35.28:164][304]LogModuleManager: Shutting down and abandoning module UObjectPlugin (110)
+[2016.07.29-04.35.28:164][304]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (109)
+[2016.07.29-04.35.28:193][304]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (108)
+[2016.07.29-04.35.28:270][304]LogModuleManager: Shutting down and abandoning module SourceControl (107)
+[2016.07.29-04.35.28:351][304]LogModuleManager: Shutting down and abandoning module GitSourceControl (106)
+[2016.07.29-04.35.28:440][304]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (105)
+[2016.07.29-04.35.28:440][304]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (104)
+[2016.07.29-04.35.28:481][304]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (103)
+[2016.07.29-04.35.28:481][304]LogModuleManager: Shutting down and abandoning module MeshPaint (102)
+[2016.07.29-04.35.28:511][304]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (101)
+[2016.07.29-04.35.28:613][304]LogModuleManager: Shutting down and abandoning module HotReload (100)
+[2016.07.29-04.35.28:689][304]LogModuleManager: Shutting down and abandoning module MainFrame (99)
+[2016.07.29-04.35.28:734][304]LogModuleManager: Shutting down and abandoning module LevelEditor (98)
+[2016.07.29-04.35.28:806][304]LogModuleManager: Shutting down and abandoning module ContentBrowser (97)
+[2016.07.29-04.35.28:807][304]LogModuleManager: Shutting down and abandoning module Paper2DEditor (96)
+[2016.07.29-04.35.28:899][304]LogModuleManager: Shutting down and abandoning module UE4_ProjectD (95)
+[2016.07.29-04.35.28:899][304]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.07.29-04.35.28:999][304]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.07.29-04.35.28:999][304]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.07.29-04.35.29:063][304]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.07.29-04.35.29:063][304]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.07.29-04.35.29:063][304]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.07.29-04.35.29:368][304]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.07.29-04.35.29:368][304]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.07.29-04.35.29:382][304]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.07.29-04.35.29:382][304]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.07.29-04.35.29:382][304]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.07.29-04.35.29:436][304]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.07.29-04.35.29:436][304]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.07.29-04.35.29:436][304]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.07.29-04.35.29:596][304]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.07.29-04.35.29:596][304]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.07.29-04.35.29:680][304]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.07.29-04.35.29:784][304]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.07.29-04.35.29:784][304]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.07.29-04.35.29:784][304]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.07.29-04.35.29:942][304]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.07.29-04.35.30:159][304]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.07.29-04.35.30:305][304]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.07.29-04.35.30:545][304]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.07.29-04.35.30:545][304]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.07.29-04.35.30:938][304]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.07.29-04.35.30:938][304]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.07.29-04.35.30:938][304]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.07.29-04.35.30:938][304]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.07.29-04.35.30:938][304]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.07.29-04.35.30:938][304]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.07.29-04.35.30:940][304]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.07.29-04.35.31:295][304]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.07.29-04.35.31:295][304]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.07.29-04.35.31:295][304]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.07.29-04.35.31:460][304]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.07.29-04.35.31:519][304]LogDerivedDataCache: Shutdown
+[2016.07.29-04.35.31:519][304]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.07.29-04.35.31:571][304]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.07.29-04.35.31:672][304]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.07.29-04.35.31:772][304]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.07.29-04.35.31:866][304]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.07.29-04.35.31:866][304]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.07.29-04.35.31:934][304]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.07.29-04.35.32:255][304]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.07.29-04.35.32:255][304]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.07.29-04.35.32:255][304]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.07.29-04.35.32:255][304]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.07.29-04.35.32:255][304]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.07.29-04.35.32:337][304]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.07.29-04.35.32:407][304]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.07.29-04.35.32:524][304]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.07.29-04.35.32:525][304]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.07.29-04.35.32:633][304]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.07.29-04.35.32:693][304]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.07.29-04.35.32:693][304]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.07.29-04.35.32:693][304]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.07.29-04.35.32:693][304]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.07.29-04.35.32:693][304]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.07.29-04.35.32:693][304]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.07.29-04.35.32:807][304]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.07.29-04.35.32:915][304]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.07.29-04.35.32:968][304]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.07.29-04.35.33:019][304]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.07.29-04.35.33:019][304]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.07.29-04.35.33:112][304]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.07.29-04.35.33:112][304]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.07.29-04.35.33:184][304]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.07.29-04.35.33:311][304]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.07.29-04.35.38:048][304]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.07.29-04.35.38:270][304]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.07.29-04.35.38:429][304]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.07.29-04.35.38:446][304]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.07.29-04.35.38:543][304]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.07.29-04.35.38:619][304]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.07.29-04.35.38:619][304]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.07.29-04.35.38:746][304]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.07.29-04.35.38:847][304]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.07.29-04.35.38:847][304]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.07.29-04.35.38:847][304]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.07.29-04.35.38:847][304]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.07.29-04.35.38:847][304]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.07.29-04.35.38:847][304]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.07.29-04.35.38:878][304]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.07.29-04.35.38:910][304]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.07.29-04.35.38:955][304]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.07.29-04.35.39:388][304]LogExit: Exiting.
+[2016.07.29-04.35.42:722][304]Log file closed, 07/28/16 21:35:42

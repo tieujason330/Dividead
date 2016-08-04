@@ -3,6 +3,6 @@
 #ifndef __UE4_PROJECTD_H__
 #define __UE4_PROJECTD_H__
 
-#include "EngineMinimal.h"
+#include "Engine.h"
 
 #endif

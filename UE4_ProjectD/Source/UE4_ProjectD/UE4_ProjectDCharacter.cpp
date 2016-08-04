@@ -39,6 +39,9 @@ AUE4_ProjectDCharacter::AUE4_ProjectDCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	PlayerInitialHealth = 100.0f;
+	PlayerCurrentHealth = PlayerInitialHealth;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -124,4 +127,19 @@ void AUE4_ProjectDCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+}
+
+float AUE4_ProjectDCharacter::GetInitialHealth()
+{
+	return PlayerInitialHealth;
+}
+
+float AUE4_ProjectDCharacter::GetCurrentHealth()
+{
+	return PlayerCurrentHealth;
+}
+
+void AUE4_ProjectDCharacter::UpdateHealth(float HealthChange)
+{
+	//do later
 }

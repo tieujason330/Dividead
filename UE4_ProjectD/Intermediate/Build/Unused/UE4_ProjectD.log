@@ -1,0 +1,9 @@
+﻿  Creating makefile for hot reloading UE4_ProjectDEditor (no existing makefile)
+  Compiling game modules for hot reload
+  Performing full C++ include scan (no include cache file)
+  Parsing headers for UE4_ProjectDEditor
+    Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h(30) : Missing ';' in 'variable declaration'
+Error : Failed to generate code for UE4_ProjectDEditor - error code: OtherCompilationError (5)
+  UnrealHeaderTool failed for target 'UE4_ProjectDEditor' (platform: Win64, module info: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(37,5): error MSB3075: The command ""C:\Program Files (x86)\Epic Games\4.12\Engine\Build\BatchFiles\Build.bat" UE4_ProjectDEditor Win64 Development "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.

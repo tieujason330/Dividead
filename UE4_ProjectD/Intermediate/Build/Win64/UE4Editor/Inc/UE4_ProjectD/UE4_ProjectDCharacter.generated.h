@@ -13,8 +13,62 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UE4_PROJECTD_UE4_ProjectDCharacter_generated_h
 
-#define UE4_ProjectD_Source_UE4_ProjectD_UE4_ProjectDCharacter_h_9_RPC_WRAPPERS
-#define UE4_ProjectD_Source_UE4_ProjectD_UE4_ProjectDCharacter_h_9_RPC_WRAPPERS_NO_PURE_DECLS
+#define UE4_ProjectD_Source_UE4_ProjectD_UE4_ProjectDCharacter_h_9_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUpdateHealth) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_HealthChange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->UpdateHealth(Z_Param_HealthChange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentHealth) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=this->GetCurrentHealth(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetInitialHealth) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=this->GetInitialHealth(); \
+		P_NATIVE_END; \
+	}
+
+
+#define UE4_ProjectD_Source_UE4_ProjectD_UE4_ProjectDCharacter_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUpdateHealth) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_HealthChange); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->UpdateHealth(Z_Param_HealthChange); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentHealth) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=this->GetCurrentHealth(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetInitialHealth) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=this->GetInitialHealth(); \
+		P_NATIVE_END; \
+	}
+
+
 #define UE4_ProjectD_Source_UE4_ProjectD_UE4_ProjectDCharacter_h_9_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAUE4_ProjectDCharacter(); \

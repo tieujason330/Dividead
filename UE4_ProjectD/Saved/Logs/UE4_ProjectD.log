@@ -1,28 +1,9 @@
-﻿Log file open, 07/20/16 19:36:18
+﻿Log file open, 08/03/16 19:16:51
 LogInit:Display: Running engine for game: UE4_ProjectD
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(276450171) SRandInit(276450173).
+LogInit:Display: RandInit(-1644339161) SRandInit(-1644339158).
 LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.073907
-LogInit:Warning: Incompatible or missing module: UE4Editor-UE4_ProjectD.dll
-Running C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD Development Win64 -project="C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject" -editorrecompile -progress -noubtmakefiles -NoHotReloadFromIDE
-@progress push 5%
-Parsing headers for UE4_ProjectDEditor
-  Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-Reflection code generated for UE4_ProjectDEditor in 3.9526341 seconds
-@progress pop
-Performing 8 actions (4 in parallel)
-[2/8] Resource PCLaunch.rc
-[3/8] Resource ModuleVersionResource.rc.inl
-PCH.UE4_ProjectD.h.cpp
-UE4_ProjectD.generated.cpp
-UE4_ProjectDGameMode.cpp
-UE4_ProjectD.cpp
-UE4_ProjectDCharacter.cpp
-[8/8] Link UE4Editor-UE4_ProjectD.dll
-   Creating library C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD.lib and object C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD.exp
-Failed to write dependency cache: Access to the path 'C:\Users\DT\Documents\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor' is denied.
-Total build time: 36.99 seconds
+LogStats: Stats thread started at 28.016508
 LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
 LogInit: API Version: 2992821
 LogInit: Net Version: 3039270
@@ -63,272 +44,332 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.07.21-02.37.09:624][  0]LogInit: Selected Device Profile: [Windows]
-[2016.07.21-02.37.09:624][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.07.21-02.37.09:914][  0]LogInit: Computer: JASON-PC
-[2016.07.21-02.37.09:914][  0]LogInit: User: Jason
-[2016.07.21-02.37.09:914][  0]LogInit: CPU Page size=65536, Cores=4
-[2016.07.21-02.37.09:915][  0]LogInit: High frequency timer resolution =3.215419 MHz
-[2016.07.21-02.37.09:915][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2016.07.21-02.37.09:915][  0]LogMemory: Platform Memory Stats for Windows
-[2016.07.21-02.37.09:915][  0]LogMemory: Process Physical Memory: 192.36 MB used, 192.36 MB peak
-[2016.07.21-02.37.09:915][  0]LogMemory: Process Virtual Memory: 196.45 MB used, 196.45 MB peak
-[2016.07.21-02.37.09:915][  0]LogMemory: Physical Memory: 3856.51 MB used, 8085.93 MB total
-[2016.07.21-02.37.09:915][  0]LogMemory: Virtual Memory: 536.29 MB used, 8388608.00 MB total
-[2016.07.21-02.37.10:169][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2016.07.21-02.37.11:234][  0]LogD3D11RHI: D3D11 adapters:
-[2016.07.21-02.37.11:258][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 560 Ti  ' (Feature Level 11_0)
-[2016.07.21-02.37.11:258][  0]LogD3D11RHI:       978/0/3071 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2016.07.21-02.37.11:965][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 3000' (Feature Level 10_0)
-[2016.07.21-02.37.11:965][  0]LogD3D11RHI:       64/0/1632 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
-[2016.07.21-02.37.11:965][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.07.21-02.37.12:033][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.07.21-02.37.12:033][  0]LogD3D11RHI:     GPU DeviceId: 0x1200 (for the marketing name, search the web for "GPU Device Id")
-[2016.07.21-02.37.12:033][  0]LogWindows: EnumDisplayDevices:
-[2016.07.21-02.37.12:034][  0]LogWindows:    0. 'NVIDIA GeForce GTX 560 Ti  ' (P:0 D:1)
-[2016.07.21-02.37.12:034][  0]LogWindows:    1. 'NVIDIA GeForce GTX 560 Ti  ' (P:1 D:1)
-[2016.07.21-02.37.12:034][  0]LogWindows:    2. 'Intel(R) HD Graphics 3000' (P:0 D:1)
-[2016.07.21-02.37.12:035][  0]LogWindows:    3. 'Intel(R) HD Graphics 3000' (P:0 D:0)
-[2016.07.21-02.37.12:035][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
-[2016.07.21-02.37.12:035][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
-[2016.07.21-02.37.12:035][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
-[2016.07.21-02.37.12:035][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:2 
-[2016.07.21-02.37.12:035][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 560 Ti  
-[2016.07.21-02.37.12:084][  0]LogD3D11RHI:   Driver Version: 365.10 (internal:10.18.13.6510, unified:365.10)
-[2016.07.21-02.37.12:084][  0]LogD3D11RHI:      Driver Date: 4-27-2016
-[2016.07.21-02.37.12:084][  0]LogRHI: Texture pool is 684 MB (70% of 978 MB)
-[2016.07.21-02.37.12:096][  0]LogD3D11RHI: Async texture creation enabled
-[2016.07.21-02.37.12:361][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2016.07.21-02.37.12:451][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/Shaders/WorkingDirectory/10040/).
-[2016.07.21-02.37.12:451][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Jason/AppData/Local/Temp/UnrealShaderWorkingDir/C104F12C46D1284A28ABA99351FEFBAA/'.
-[2016.07.21-02.37.12:486][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.07.21-02.37.22:739][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.07.21-02.37.22:770][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.07.21-02.37.22:786][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.07.21-02.37.22:797][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.07.21-02.37.22:823][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.07.21-02.37.22:854][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.07.21-02.37.22:879][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.07.21-02.37.22:899][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.07.21-02.37.22:913][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.07.21-02.37.22:926][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.07.21-02.37.22:942][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.07.21-02.37.23:160][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.07.21-02.37.23:160][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.07.21-02.37.23:195][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.07.21-02.37.23:286][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.07.21-02.37.23:303][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.07.21-02.37.23:325][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.07.21-02.37.23:341][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.07.21-02.37.23:369][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.07.21-02.37.23:369][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.07.21-02.37.24:291][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.07.21-02.37.24:965][  0]LogDerivedDataCache: Loaded boot cache 0.66s 50MB C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.07.21-02.37.24:965][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
-[2016.07.21-02.37.24:965][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.07.21-02.37.24:965][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.07.21-02.37.24:965][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.07.21-02.37.24:965][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.07.21-02.37.25:022][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.07.21-02.37.25:034][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Jason/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.07.21-02.37.31:565][  0]LogInit: Selected Device Profile: [Windows]
-[2016.07.21-02.37.31:653][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.07.21-02.37.34:854][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.07.21-02.37.34:854][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.07.21-02.37.34:854][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2016.07.21-02.37.40:323][  0]LogAssetRegistry: FAssetRegistry took 0.0225 seconds to start up
-[2016.07.21-02.37.40:514][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.075482 seconds
-[2016.07.21-02.37.40:586][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
-[2016.07.21-02.37.40:586][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
-[2016.07.21-02.37.40:586][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.07.21-02.37.40:692][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.07.21-02.37.57:487][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.07.21-02.37.57:506][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.07.21-02.38.45:396][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.07.21-02.38.48:253][  0]SourceControl: Info Source control is disabled
-[2016.07.21-02.38.48:346][  0]SourceControl: Info Source control is disabled
-[2016.07.21-02.38.48:392][  0]SourceControl: Info Source control is disabled
-[2016.07.21-02.38.48:442][  0]SourceControl: Info Source control is disabled
-[2016.07.21-02.38.50:136][  0]LogEngine: Initializing Engine...
-[2016.07.21-02.38.50:490][  0]LogHMD: SteamVR failed to initialize.  Err: 108
-[2016.07.21-02.38.50:500][  0]LogHMD: SteamVR failed to initialize.  Err: 108
-[2016.07.21-02.38.51:156][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.07.21-02.38.51:357][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.07.21-02.38.51:400][  0]LogInit: FAudioDevice initialized.
-[2016.07.21-02.38.51:431][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.07.21-02.38.51:440][  0]LogInit: Texture streaming: Enabled
-[2016.07.21-02.38.51:638][  0]LogInit: Transaction tracking system initialized
-[2016.07.21-02.38.52:880][  0]BlueprintLog: New page: Editor Load
-[2016.07.21-02.38.54:223][  0]LocalizationService: Info Localization service is disabled
-[2016.07.21-02.38.55:026][  0]LogConsoleResponse:Display: 
-[2016.07.21-02.38.57:918][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/' took 0.02s
-[2016.07.21-02.38.57:918][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2016.07.21-02.38.57:918][  0]LogCook:Display: Mobile HDR setting 1
-[2016.07.21-02.39.01:080][  0]SourceControl: Info Source control is disabled
-[2016.07.21-02.39.01:098][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.07.21-02.39.01:142][  0]LightingResults: New page: Lighting Build
-[2016.07.21-02.39.01:296][  0]MapCheck: New page: Map Check
-[2016.07.21-02.39.01:296][  0]LightingResults: New page: Lighting Build
-[2016.07.21-02.39.05:397][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.07.21-02.39.06:987][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.07.21-02.39.07:115][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.07.21-02.39.07:182][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 67.175ms to complete.
-[2016.07.21-02.39.07:182][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 6.085
-[2016.07.21-02.39.10:384][  0]LogCollectionManager: Loaded 0 collections in 0.032465 seconds
-[2016.07.21-02.39.11:331][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Collections/' took 0.01s
-[2016.07.21-02.39.11:331][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Developers/Jason/Collections/' took 0.01s
-[2016.07.21-02.39.11:331][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Collections/' took 0.01s
-[2016.07.21-02.39.11:331][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2016.07.21-02.39.11:485][  0]LogContentBrowser: Native class hierarchy populated in 0.1280 seconds. Added 2049 classes and 371 folders.
-[2016.07.21-02.39.11:590][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.07.21-02.39.11:591][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.001 s
-[2016.07.21-02.39.11:598][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0013 seconds. Added 12 classes and 0 folders.
-[2016.07.21-02.39.11:631][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0010 seconds. Added 0 classes and 0 folders.
-[2016.07.21-02.39.17:164][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0011 seconds. Added 0 classes and 0 folders.
-[2016.07.21-02.39.18:343][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0022 seconds. Added 1 classes and 2 folders.
-[2016.07.21-02.39.23:579][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.07.21-02.39.24:432][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.07.21-02.39.24:686][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0025 seconds. Added 1 classes and 2 folders.
-[2016.07.21-02.39.24:686][  0]LogLoad: Full Startup: 187.06 seconds (BP compile: 0.59 seconds)
-[2016.07.21-02.39.24:687][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.07.21-02.39.24:687][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.07.21-02.39.24:775][  0]LogOcInput: OculusInput pre-init called
-[2016.07.21-02.39.25:245][  0]LogContentStreaming: Texture pool size now 400 MB
-[2016.07.21-02.39.27:359][  0]LogRenderer: Reallocating scene render targets to support 1192x620 (Frame:2).
-[2016.07.21-02.39.28:061][  4]LogAssetRegistry: Asset discovery search completed in 107.7572 seconds
-[2016.07.21-02.39.28:061][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.07.21-02.39.28:061][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000039 seconds (updated 0 objects)
-[2016.07.21-02.49.12:837][567]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.49.12:837][567]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.07.21-02.49.12:981][567]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 20, 2016, 11:49:12 AM)
-[2016.07.21-02.49.12:981][567]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.07.21-02.49.13:056][567]LogPlayLevel: PIE: StaticDuplicateObject took: (0.074501s)
-[2016.07.21-02.49.13:057][567]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.07.21-02.49.13:057][567]LogPlayLevel: PIE: World Init took: (0.000882s)
-[2016.07.21-02.49.13:057][567]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.075698s)
-[2016.07.21-02.49.13:103][567]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.07.21-02.49.13:108][567]LogInit: FAudioDevice initialized.
-[2016.07.21-02.49.13:293][567]LogWorld: Game class is 'UE4_ProjectDGameMode'
-[2016.07.21-02.49.13:356][567]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.20-19.49.13
-[2016.07.21-02.49.13:380][567]LogWorld: Bringing up level for play took: 0.027215
-[2016.07.21-02.49.13:543][567]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0012 seconds. Added 11 classes and 0 folders.
-[2016.07.21-02.49.13:561][567]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.272
-[2016.07.21-02.49.13:561][567]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.49.21:553][294]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.49.21:681][294]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.49.41:683][579]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.07.21-02.49.41:699][579]LogEditorActor: Deleted 1 Actors (0.025 secs)
-[2016.07.21-02.49.44:158][871]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.07.21-02.49.44:167][871]LogEditorActor: Deleted 1 Actors (0.010 secs)
-[2016.07.21-02.49.45:645][ 46]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.07.21-02.49.45:654][ 46]LogEditorActor: Deleted 1 Actors (0.010 secs)
-[2016.07.21-02.49.46:978][202]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.07.21-02.49.46:986][202]LogEditorActor: Deleted 1 Actors (0.009 secs)
-[2016.07.21-02.49.48:846][419]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.07.21-02.49.48:862][419]LogEditorActor: Deleted 1 Actors (0.016 secs)
-[2016.07.21-02.49.50:041][556]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.07.21-02.49.58:960][539]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.07.21-02.49.58:972][539]LogEditorActor: Deleted 1 Actors (0.012 secs)
-[2016.07.21-02.49.59:810][637]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.07.21-02.50.06:830][260]MapCheck: New page: Map Check
-[2016.07.21-02.50.06:946][260]LightingResults: New page: Lighting Build - Jul 20, 2016, 11:50:06 AM
-[2016.07.21-02.50.07:274][260]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.07.21-02.50.07:679][260]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.07.21-02.50.07:951][260]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.07.21-02.50.10:687][260]LogSwarmInterface:Error: [TryOpenConnection] Waiting for the agent to start up ...
-[2016.07.21-02.50.11:066][260]LogSwarmInterface:Error: System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 127.0.0.1:8008
-
-Server stack trace: 
-   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   at System.Runtime.Remoting.Channels.RemoteConnection.CreateNewSocket(EndPoint ipEndPoint)
-   at System.Runtime.Remoting.Channels.SocketCache.GetSocket(String machinePortAndSid, Boolean openNew)
-   at System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.SendRequestWithRetry(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream)
-   at System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.AsyncProcessRequest(IClientChannelSinkStack sinkStack, IMessage msg, ITransportHeaders headers, Stream stream)
-   at System.Runtime.Remoting.Channels.BinaryClientFormatterSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
-
-Exception rethrown at [0]: 
-   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
-   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
-   at NSwarm.IAgentInterfaceWrapper.MethodDelegate.EndInvoke(Hashtable& OutParameters, IAsyncResult result)
-   at NSwarm.FSwarmInterface.TryOpenConnection(FConnectionCallback CallbackFunc, IntPtr CallbackData, ELogFlags LoggingFlags) in i:\Perforce2\UE4-Orion\Engine\Source\Editor\SwarmInterface\DotNET\SwarmInterface.cs:line 2811
-[2016.07.21-02.50.16:343][260]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.07.21-02.50.16:343][260]LogSwarmInterface: [TryOpenConnection] Local Process ID is 10040
-[2016.07.21-02.50.22:175][260]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.07.21-02.50.22:175][260]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.07.21-02.50.22:175][260]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.07.21-02.50.22:175][260]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.07.21-02.50.22:175][260]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.07.21-02.50.22:987][260]LogEditorBuildUtils: Build time 0:16
-[2016.07.21-02.50.23:795][261]LogSavePackage: Save=510.24ms
-[2016.07.21-02.50.23:795][261]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/ThirdPersonExampleMap_Auto1FBA3416C40AD0A72DE484095673B4D9A.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap'
-[2016.07.21-02.50.23:796][261]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap
-[2016.07.21-02.50.23:807][261]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.611
-[2016.07.21-02.50.23:807][261]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.611
-[2016.07.21-02.50.23:835][261]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CubeMaterial, compiling. 
-[2016.07.21-02.50.23:982][261]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CubeMaterial, compiling. 
-[2016.07.21-02.50.27:016][269]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.50.27:016][269]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.07.21-02.50.27:016][269]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 20, 2016, 11:50:27 AM)
-[2016.07.21-02.50.27:016][269]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.07.21-02.50.27:039][269]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022891s)
-[2016.07.21-02.50.27:041][269]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.07.21-02.50.27:041][269]LogPlayLevel: PIE: World Init took: (0.001220s)
-[2016.07.21-02.50.27:041][269]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.024468s)
-[2016.07.21-02.50.27:056][269]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.07.21-02.50.27:063][269]LogInit: FAudioDevice initialized.
-[2016.07.21-02.50.27:111][269]LogWorld: Game class is 'UE4_ProjectDGameMode'
-[2016.07.21-02.50.27:116][269]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.20-19.50.27
-[2016.07.21-02.50.27:116][269]LogWorld: Bringing up level for play took: 0.003656
-[2016.07.21-02.50.27:117][269]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.173
-[2016.07.21-02.50.27:117][269]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.50.33:059][820]Job is a success!
-[2016.07.21-02.50.35:525][899]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.50.35:591][899]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-02.51.38:530][712]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
-[2016.07.21-02.51.39:619][808]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.07.21-02.52.40:128][809]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
-[2016.07.21-02.52.40:128][809]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
-[2016.07.21-02.52.40:128][809]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
-[2016.07.21-02.52.40:128][809]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
-[2016.07.21-02.52.40:128][809]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
-[2016.07.21-02.52.40:128][809]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
-[2016.07.21-02.52.40:300][809]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8)
-[2016.07.21-02.52.40:300][809]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8)
-[2016.07.21-02.52.40:426][809]Lightmass on JASON-PC: 2:12 min total, 99 ms importing, 3 ms setup, 878 ms photons, 2:11 min processing, 0 ms extra exporting [6/6 mappings]. Threads: 8:45 min total, 11.9 sec processing.
-[2016.07.21-02.52.40:465][809]LogStaticLightingSystem: Illumination: 27.8 sec (1.22 sec encoding lightmaps, 171 ms encoding shadowmaps)
-[2016.07.21-02.52.40:465][809]LogStaticLightingSystem: Lightmap texture memory:  2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 4 textures
-[2016.07.21-02.52.40:465][809]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
-[2016.07.21-02.52.41:177][810]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.07.21-02.52.41:177][810]MapCheck: New page: ThirdPersonExampleMap - Jul 20, 2016, 11:52:41 AM
-[2016.07.21-02.52.41:287][810]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 110.309ms to complete.
-[2016.07.21-03.00.34:106][975]LogSavePackage: Save=201.93ms
-[2016.07.21-03.00.34:106][975]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/ThirdPersonExampleMap_Auto2B949A5E34AD0E9D32DCC0D8035DA34BF.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto2.umap'
-[2016.07.21-03.00.34:107][975]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto2.umap
-[2016.07.21-03.00.34:108][975]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.231
-[2016.07.21-03.00.34:108][975]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.231
-[2016.07.21-03.06.47:170][ 95]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-03.06.47:170][ 95]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.07.21-03.06.47:171][ 95]PIE: New page: PIE session: ThirdPersonExampleMap (Jul 20, 2016, 12:06:47 PM)
-[2016.07.21-03.06.47:171][ 95]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.07.21-03.06.47:216][ 95]LogPlayLevel: PIE: StaticDuplicateObject took: (0.044463s)
-[2016.07.21-03.06.47:217][ 95]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.07.21-03.06.47:217][ 95]LogPlayLevel: PIE: World Init took: (0.001046s)
-[2016.07.21-03.06.47:217][ 95]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.045905s)
-[2016.07.21-03.06.47:233][ 95]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.07.21-03.06.47:239][ 95]LogInit: FAudioDevice initialized.
-[2016.07.21-03.06.47:290][ 95]LogWorld: Game class is 'UE4_ProjectDGameMode'
-[2016.07.21-03.06.47:295][ 95]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.20-20.06.47
-[2016.07.21-03.06.47:295][ 95]LogWorld: Bringing up level for play took: 0.004006
-[2016.07.21-03.06.47:296][ 95]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.014
-[2016.07.21-03.06.47:297][ 95]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-03.06.52:602][565]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-03.06.52:633][565]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.07.21-03.07.05:528][ 71]LogEditorActor: Deleted Actor: TextRenderActor
-[2016.07.21-03.07.05:536][ 71]LogEditorActor: Deleted 1 Actors (0.008 secs)
-[2016.07.21-03.07.14:262][913]LogEditorActor: Deleted Actor: DocumentationActor
-[2016.07.21-03.07.14:270][913]LogEditorActor: Deleted 1 Actors (0.008 secs)
-[2016.07.21-03.07.19:211][493]LogEditorActor: Deleted Actor: AtmosphericFog
-[2016.07.21-03.07.19:223][493]LogEditorActor: Deleted 1 Actors (0.013 secs)
-[2016.07.21-03.07.21:112][717]LogEditorActor: Deleted Actor: SphereReflectionCapture
-[2016.07.21-03.07.21:121][717]LogEditorActor: Deleted 1 Actors (0.008 
+[2016.08.04-02.16.53:125][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.04-02.16.53:125][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.04-02.16.53:293][  0]LogInit: Computer: JASON-PC
+[2016.08.04-02.16.53:294][  0]LogInit: User: Jason
+[2016.08.04-02.16.53:294][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.04-02.16.53:294][  0]LogInit: High frequency timer resolution =3.215419 MHz
+[2016.08.04-02.16.53:301][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.08.04-02.16.53:301][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.04-02.16.53:301][  0]LogMemory: Process Physical Memory: 190.12 MB used, 190.12 MB peak
+[2016.08.04-02.16.53:301][  0]LogMemory: Process Virtual Memory: 196.16 MB used, 196.16 MB peak
+[2016.08.04-02.16.53:301][  0]LogMemory: Physical Memory: 5683.96 MB used, 8085.93 MB total
+[2016.08.04-02.16.53:301][  0]LogMemory: Virtual Memory: 523.06 MB used, 8388608.00 MB total
+[2016.08.04-02.16.55:542][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.04-02.16.58:952][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.04-02.16.59:159][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 560 Ti  ' (Feature Level 11_0)
+[2016.08.04-02.16.59:159][  0]LogD3D11RHI:       978/0/3071 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.08.04-02.17.00:039][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 3000' (Feature Level 10_0)
+[2016.08.04-02.17.00:039][  0]LogD3D11RHI:       64/0/1632 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2016.08.04-02.17.00:039][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.04-02.17.00:091][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.04-02.17.00:091][  0]LogD3D11RHI:     GPU DeviceId: 0x1200 (for the marketing name, search the web for "GPU Device Id")
+[2016.08.04-02.17.00:103][  0]LogWindows: EnumDisplayDevices:
+[2016.08.04-02.17.00:103][  0]LogWindows:    0. 'NVIDIA GeForce GTX 560 Ti  ' (P:0 D:1)
+[2016.08.04-02.17.00:103][  0]LogWindows:    1. 'NVIDIA GeForce GTX 560 Ti  ' (P:1 D:1)
+[2016.08.04-02.17.00:103][  0]LogWindows:    2. 'Intel(R) HD Graphics 3000' (P:0 D:1)
+[2016.08.04-02.17.00:104][  0]LogWindows:    3. 'Intel(R) HD Graphics 3000' (P:0 D:0)
+[2016.08.04-02.17.00:104][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2016.08.04-02.17.00:104][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.08.04-02.17.00:104][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.08.04-02.17.00:104][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:2 
+[2016.08.04-02.17.00:104][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 560 Ti  
+[2016.08.04-02.17.00:119][  0]LogD3D11RHI:   Driver Version: 365.10 (internal:10.18.13.6510, unified:365.10)
+[2016.08.04-02.17.00:119][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.08.04-02.17.00:119][  0]LogRHI: Texture pool is 684 MB (70% of 978 MB)
+[2016.08.04-02.17.00:126][  0]LogD3D11RHI: Async texture creation enabled
+[2016.08.04-02.17.01:617][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.08.04-02.17.02:040][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Intermediate/Shaders/WorkingDirectory/4124/).
+[2016.08.04-02.17.02:040][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Jason/AppData/Local/Temp/UnrealShaderWorkingDir/68827F3E4883A5FFC8C837B8AB8EC58A/'.
+[2016.08.04-02.17.02:094][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.04-02.17.18:908][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.04-02.17.18:954][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.04-02.17.19:020][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.04-02.17.19:092][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.04-02.17.19:142][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.04-02.17.19:216][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.04-02.17.19:302][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.04-02.17.19:351][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.04-02.17.19:422][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.04-02.17.19:470][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.04-02.17.19:550][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.04-02.17.19:677][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.04-02.17.19:677][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.04-02.17.19:788][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.04-02.17.20:217][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.04-02.17.20:226][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.04-02.17.20:244][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.04-02.17.20:327][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.04-02.17.20:369][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.04-02.17.20:369][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.04-02.17.21:392][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.04-02.17.22:058][  0]LogDerivedDataCache: Loaded boot cache 0.65s 50MB C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.04-02.17.22:058][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.08.04-02.17.22:058][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.04-02.17.22:058][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.04-02.17.22:058][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.04-02.17.22:058][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.04-02.17.22:208][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.04-02.17.22:276][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Jason/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.04-02.17.35:664][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.04-02.17.35:827][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.04-02.17.43:333][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.04-02.17.43:333][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.04-02.17.43:333][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.04-02.17.51:657][  0]LogAssetRegistry: FAssetRegistry took 0.0235 seconds to start up
+[2016.08.04-02.17.52:019][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.132279 seconds
+[2016.08.04-02.17.52:152][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.08.04-02.17.52:152][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.08.04-02.17.52:152][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.04-02.17.52:245][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.04-02.18.01:315][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.04-02.18.01:315][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.04-02.18.21:586][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.04-02.18.25:909][  0]SourceControl: Info Source control is disabled
+[2016.08.04-02.18.26:142][  0]SourceControl: Info Source control is disabled
+[2016.08.04-02.18.26:207][  0]SourceControl: Info Source control is disabled
+[2016.08.04-02.18.26:258][  0]SourceControl: Info Source control is disabled
+[2016.08.04-02.18.28:207][  0]LogEngine: Initializing Engine...
+[2016.08.04-02.18.28:648][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.08.04-02.18.28:654][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.08.04-02.18.30:269][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.04-02.18.30:488][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.04-02.18.30:589][  0]LogInit: FAudioDevice initialized.
+[2016.08.04-02.18.30:626][  0]LogDerivedDataCache: Saved boot cache 0.04s 50MB C:/Users/Jason/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.04-02.18.30:636][  0]LogInit: Texture streaming: Enabled
+[2016.08.04-02.18.30:893][  0]LogInit: Transaction tracking system initialized
+[2016.08.04-02.18.31:262][  0]BlueprintLog: New page: Editor Load
+[2016.08.04-02.18.33:347][  0]LocalizationService: Info Localization service is disabled
+[2016.08.04-02.18.34:228][  0]LogConsoleResponse:Display: 
+[2016.08.04-02.18.36:722][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/' took 0.01s
+[2016.08.04-02.18.36:722][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.04-02.18.36:722][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.04-02.18.38:311][  0]SourceControl: Info Source control is disabled
+[2016.08.04-02.18.38:367][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.04-02.18.38:381][  0]LightingResults: New page: Lighting Build
+[2016.08.04-02.18.38:573][  0]MapCheck: New page: Map Check
+[2016.08.04-02.18.38:573][  0]LightingResults: New page: Lighting Build
+[2016.08.04-02.18.40:379][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.08.04-02.18.41:498][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.04-02.18.41:562][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.04-02.18.41:616][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 54.062ms to complete.
+[2016.08.04-02.18.41:616][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 3.272
+[2016.08.04-02.18.43:319][  0]LogCollectionManager: Loaded 0 collections in 0.002907 seconds
+[2016.08.04-02.18.43:439][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Collections/' took 0.01s
+[2016.08.04-02.18.43:439][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Developers/Jason/Collections/' took 0.01s
+[2016.08.04-02.18.43:439][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Collections/' took 0.01s
+[2016.08.04-02.18.43:439][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.08.04-02.18.43:504][  0]LogContentBrowser: Native class hierarchy populated in 0.0420 seconds. Added 2049 classes and 371 folders.
+[2016.08.04-02.18.43:552][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.08.04-02.18.43:552][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.04-02.18.43:553][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0012 seconds. Added 12 classes and 0 folders.
+[2016.08.04-02.18.43:586][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0011 seconds. Added 0 classes and 0 folders.
+[2016.08.04-02.18.45:528][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2016.08.04-02.18.45:613][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0015 seconds. Added 1 classes and 2 folders.
+[2016.08.04-02.18.47:031][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.04-02.18.47:255][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.04-02.18.47:330][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0013 seconds. Added 1 classes and 2 folders.
+[2016.08.04-02.18.47:330][  0]LogLoad: Full Startup: 160.14 seconds (BP compile: 0.94 seconds)
+[2016.08.04-02.18.47:330][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.04-02.18.47:330][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.04-02.18.47:700][  0]LogOcInput: OculusInput pre-init called
+[2016.08.04-02.18.48:027][  0]LogContentStreaming: Texture pool size now 400 MB
+[2016.08.04-02.18.49:294][  0]LogRenderer: Reallocating scene render targets to support 1192x620 (Frame:2).
+[2016.08.04-02.18.50:622][  3]LogAssetRegistry: Asset discovery search completed in 58.9845 seconds
+[2016.08.04-02.18.50:623][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.08.04-02.18.50:638][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.015209 seconds (updated 0 objects)
+[2016.08.04-02.59.02:833][ 83]Recompiling UE4_ProjectD...
+[2016.08.04-02.59.02:845][ 83]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 8134 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.08.04-02.59.02:977][ 83]Warning: Starting HotReload took  1.1s.
+[2016.08.04-02.59.41:181][274]CompilerResultsLog: New page: Compilation - Aug 3, 2016, 11:59:40 AM
+[2016.08.04-02.59.41:248][274]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (changes to module files)
+[2016.08.04-02.59.41:249][274]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.04-02.59.41:249][274]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.08.04-02.59.41:249][274]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.04-02.59.41:249][274]CompilerResultsLog: Info Reflection code generated for UE4_ProjectDEditor in 6.0574699 seconds
+[2016.08.04-02.59.41:249][274]LogMainFrame: MainFrame: Module compiling took 39.157 seconds
+[2016.08.04-02.59.41:307][274]Warning: HotReload failed, recompile failed
+[2016.08.04-02.59.42:988][414]Recompiling UE4_ProjectD...
+[2016.08.04-02.59.42:988][414]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 1994 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.08.04-02.59.42:989][414]Warning: Starting HotReload took  0.0s.
+[2016.08.04-03.01.50:823][142]CompilerResultsLog: New page: Compilation - Aug 3, 2016, 12:01:50 PM
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info Creating makefile for hot reloading UE4_ProjectD (working set of source files changed)
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info Reflection code generated for UE4_ProjectDEditor in 5.1422607 seconds
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info Performing 7 actions (4 in parallel)
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info PCH.UE4_ProjectD.h.cpp
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info UE4_ProjectDCharacter.cpp
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info UE4_ProjectDGameMode.cpp
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info MyClass.cpp
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info UE4_ProjectD.cpp
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info UE4_ProjectD.generated.cpp
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info [7/7] Link UE4Editor-UE4_ProjectD-1994.dll
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info    Creating library C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD-1994.lib and object C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD-1994.exp
+[2016.08.04-03.01.50:910][142]CompilerResultsLog: Info Total build time: 124.50 seconds
+[2016.08.04-03.01.50:910][142]LogMainFrame: MainFrame: Module compiling took 127.939 seconds
+[2016.08.04-03.01.53:658][142]LogClass: Could not find existing class UE4_ProjectDGameMode in package /Script/UE4_ProjectD for HotReload, assuming new class
+[2016.08.04-03.01.54:016][142]LogHotReload: Re-instancing UE4_ProjectDGameMode after hot-reload.
+[2016.08.04-03.01.54:573][142]LogContentBrowser: Native class hierarchy updated for 'UE4_ProjectD' in 0.0860 seconds. Added 2 classes and 2 folders.
+[2016.08.04-03.01.54:574][142]Warning: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2016.08.04-03.01.54:812][142]LogContentBrowser: Native class hierarchy populated in 0.0107 seconds. Added 2051 classes and 375 folders.
+[2016.08.04-03.01.54:934][142]Warning: HotReload took 132.0s.
+[2016.08.04-03.02.26:240][965]LogMetaData: Removing '/Game/Blueprints/PlayerHUD.SKEL_PlayerHUD_C' ref from Metadata '/Game/Blueprints/HUD.PackageMetaData'
+[2016.08.04-03.02.26:240][965]LogMetaData: Removing '/Game/Blueprints/PlayerHUD.PlayerHUD_C' ref from Metadata '/Game/Blueprints/HUD.PackageMetaData'
+[2016.08.04-03.02.26:240][965]LogMetaData: Removing '/Game/Blueprints/PlayerHUD.PlayerHUD:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/HUD.PackageMetaData'
+[2016.08.04-03.02.26:240][965]LogMetaData: Removing '/Game/Blueprints/PlayerHUD.PlayerHUD:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/HUD.PackageMetaData'
+[2016.08.04-03.02.26:562][965]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerHUD" FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/PlayerHUD.uasset" SILENT=true
+[2016.08.04-03.02.26:818][965]LogSavePackage: Save=138.65ms
+[2016.08.04-03.02.26:818][965]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/PlayerHUD2D744BB24C64DA5A69B956870C6EA42C.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/PlayerHUD.uasset'
+[2016.08.04-03.02.27:130][965]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/PlayerHUD.uasset
+[2016.08.04-03.02.31:083][ 56]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 111 classes and 0 folders.
+[2016.08.04-03.07.20:159][999]BlueprintLog: New page: Compile PlayerHUD
+[2016.08.04-03.07.20:401][999]BlueprintEditorCompileResults: Info [3073.13] Compile of PlayerHUD successful! [in 225 ms] (/Game/Blueprints/PlayerHUD.PlayerHUD)
+[2016.08.04-03.07.21:241][ 89]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerHUD" FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/PlayerHUD.uasset" SILENT=true
+[2016.08.04-03.07.21:290][ 89]LogSavePackage: Save=31.26ms
+[2016.08.04-03.07.21:291][ 89]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/PlayerHUD49309F864BAFA46035C1729C24CC3414.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/PlayerHUD.uasset'
+[2016.08.04-03.07.21:292][ 89]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/PlayerHUD.uasset
+[2016.08.04-03.07.45:056][603]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.016
+[2016.08.04-03.07.45:088][603]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD" FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/Blueprints/HUD_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.08.04-03.07.45:090][603]LogSavePackage: Save=1.15ms
+[2016.08.04-03.07.45:090][603]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/HUD_Auto1D2A91EC94D6C371AFB794DA7982392AB.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/Blueprints/HUD_Auto1.uasset'
+[2016.08.04-03.07.45:091][603]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/Blueprints/HUD_Auto1.uasset
+[2016.08.04-03.07.45:115][603]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/NewBlueprint] ([1] browsable assets)...
+[2016.08.04-03.07.45:115][603]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/NewBlueprint]
+[2016.08.04-03.07.45:126][603]LogSavePackage: Save=9.88ms
+[2016.08.04-03.07.45:126][603]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/NewBlueprint_Auto18D9A9FF842A6E702B56C4C960ADA65B1.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/Blueprints/NewBlueprint_Auto1.uasset'
+[2016.08.04-03.07.45:127][603]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/Autosaves/Game/Blueprints/NewBlueprint_Auto1.uasset
+[2016.08.04-03.07.45:127][603]LogFileHelpers: Auto-saving content packages took 0.070
+[2016.08.04-03.07.51:079][256]LogMetaData: Removing '/Game/Blueprints/GameMode_BP.GameMode_BP:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2016.08.04-03.07.51:079][256]LogMetaData: Removing '/Game/Blueprints/GameMode_BP.SKEL_GameMode_BP_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2016.08.04-03.07.51:079][256]LogMetaData: Removing '/Game/Blueprints/GameMode_BP.GameMode_BP_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2016.08.04-03.07.51:079][256]LogMetaData: Removing '/Game/Blueprints/GameMode_BP.GameMode_BP:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2016.08.04-03.07.51:079][256]LogMetaData: Removing '/Game/Blueprints/GameMode_BP.GameMode_BP:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2016.08.04-03.07.51:142][256]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/GameMode_BP" FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/GameMode_BP.uasset" SILENT=true
+[2016.08.04-03.07.51:159][256]LogSavePackage: Save=12.04ms
+[2016.08.04-03.07.51:159][256]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/GameMode_BPDF81DE3E45F9648778905F86FB57B595.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/GameMode_BP.uasset'
+[2016.08.04-03.07.51:161][256]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/GameMode_BP.uasset
+[2016.08.04-03.07.54:023][350]LogRenderer: Reallocating scene render targets to support 1192x880 (Frame:4625).
+[2016.08.04-03.08.02:169][252]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.08.04-03.08.13:327][538]BlueprintLog: New page: Compile GameMode_BP
+[2016.08.04-03.08.13:529][538]BlueprintEditorCompileResults: Info [3126.27] Compile of GameMode_BP successful! [in 202 ms] (/Game/Blueprints/GameMode_BP.GameMode_BP)
+[2016.08.04-03.08.28:103][ 62]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2016.08.04-03.08.36:422][875]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.08.36:422][875]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.04-03.08.36:463][875]PIE: New page: PIE session: ThirdPersonExampleMap (Aug 3, 2016, 12:08:36 PM)
+[2016.08.04-03.08.36:478][875]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.08.04-03.08.36:677][875]LogPlayLevel: PIE: StaticDuplicateObject took: (0.198993s)
+[2016.08.04-03.08.36:678][875]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.08.04-03.08.36:691][875]LogPlayLevel: PIE: World Init took: (0.013257s)
+[2016.08.04-03.08.36:705][875]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.241098s)
+[2016.08.04-03.08.36:853][875]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.04-03.08.36:872][875]LogInit: FAudioDevice initialized.
+[2016.08.04-03.08.37:173][875]LogWorld: Game class is 'GameMode_BP_C'
+[2016.08.04-03.08.37:198][875]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.08.03-20.08.37
+[2016.08.04-03.08.37:286][875]LogWorld: Bringing up level for play took: 0.097715
+[2016.08.04-03.08.37:621][875]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0014 seconds. Added 11 classes and 0 folders.
+[2016.08.04-03.08.37:658][875]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 1.363
+[2016.08.04-03.08.37:658][875]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.08.40:314][996]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.08.40:610][996]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.08.52:313][777]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.08.52:313][777]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.04-03.08.52:314][777]PIE: New page: PIE session: ThirdPersonExampleMap (Aug 3, 2016, 12:08:52 PM)
+[2016.08.04-03.08.52:314][777]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.08.04-03.08.52:320][777]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005855s)
+[2016.08.04-03.08.52:321][777]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.08.04-03.08.52:321][777]LogPlayLevel: PIE: World Init took: (0.001126s)
+[2016.08.04-03.08.52:321][777]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.007463s)
+[2016.08.04-03.08.52:347][777]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.04-03.08.52:352][777]LogInit: FAudioDevice initialized.
+[2016.08.04-03.08.52:407][777]LogWorld: Game class is 'GameMode_BP_C'
+[2016.08.04-03.08.52:410][777]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.08.03-20.08.52
+[2016.08.04-03.08.52:411][777]LogWorld: Bringing up level for play took: 0.003256
+[2016.08.04-03.08.52:412][777]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.117
+[2016.08.04-03.08.52:412][777]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.09.14:833][155]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.09.15:031][155]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.09.46:546][385]Recompiling UE4_ProjectD...
+[2016.08.04-03.09.46:546][385]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 1673 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.08.04-03.09.46:547][385]Warning: Starting HotReload took  0.1s.
+[2016.08.04-03.10.14:019][511]CompilerResultsLog: New page: Compilation - Aug 3, 2016, 12:10:14 PM
+[2016.08.04-03.10.14:019][511]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.04-03.10.14:019][511]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.08.04-03.10.14:019][511]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.04-03.10.14:019][511]CompilerResultsLog:Error: Error C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Source/UE4_ProjectD/UE4_ProjectDCharacter.h(77)  : BlueprintReadWrite should not be used on private members
+[2016.08.04-03.10.14:019][511]CompilerResultsLog:Error: Error Error: Failed to generate code for UE4_ProjectDEditor - error code: OtherCompilationError (5) 
+[2016.08.04-03.10.14:019][511]CompilerResultsLog: Info UnrealHeaderTool failed for target 'UE4_ProjectDEditor' (platform: Win64, module info: C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest).
+[2016.08.04-03.10.14:019][511]LogMainFrame: MainFrame: Module compiling took 27.482 seconds
+[2016.08.04-03.10.14:019][511]Warning: HotReload failed, recompile failed
+[2016.08.04-03.10.48:591][921]Recompiling UE4_ProjectD...
+[2016.08.04-03.10.48:591][921]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 3471 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.08.04-03.10.48:592][921]Warning: Starting HotReload took  0.0s.
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: New page: Compilation - Aug 3, 2016, 12:11:04 PM
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info Parsing headers for UE4_ProjectDEditor
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info   Running UnrealHeaderTool "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\UE4_ProjectD.uproject" "C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4_ProjectDEditor\Development\UE4_ProjectDEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info Reflection code generated for UE4_ProjectDEditor in 6.8781536 seconds
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info UE4_ProjectDCharacter.cpp
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info UE4_ProjectDGameMode.cpp
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info UE4_ProjectD.generated.cpp
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info [4/4] Link UE4Editor-UE4_ProjectD-3471.dll
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info    Creating library C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD-3471.lib and object C:\Users\Jason\Desktop\GitHub\ProjectD\UE4_ProjectD\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-UE4_ProjectD-3471.exp
+[2016.08.04-03.11.04:847][486]CompilerResultsLog: Info Total build time: 16.04 seconds
+[2016.08.04-03.11.04:847][486]LogMainFrame: MainFrame: Module compiling took 16.266 seconds
+[2016.08.04-03.11.04:884][486]LogClass: Could not find existing class UE4_ProjectDCharacter in package /Script/UE4_ProjectD for HotReload, assuming new class
+[2016.08.04-03.11.04:884][486]LogClass: Function GetCurrentHealth is new.
+[2016.08.04-03.11.04:884][486]LogClass: Function GetInitialHealth is new.
+[2016.08.04-03.11.04:884][486]LogClass: Function UpdateHealth is new.
+[2016.08.04-03.11.04:893][486]LogHotReload: Re-instancing UE4_ProjectDCharacter after hot-reload.
+[2016.08.04-03.11.05:503][486]LogContentBrowser: Native class hierarchy updated for 'UE4_ProjectD' in 0.0015 seconds. Added 2 classes and 2 folders.
+[2016.08.04-03.11.05:505][486]Warning: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2016.08.04-03.11.05:952][486]LogContentBrowser: Native class hierarchy populated in 0.0140 seconds. Added 2051 classes and 375 folders.
+[2016.08.04-03.11.05:952][486]Warning: HotReload took 17.4s.
+[2016.08.04-03.11.17:218][903]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.11.17:218][903]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.04-03.11.17:218][903]PIE: New page: PIE session: ThirdPersonExampleMap (Aug 3, 2016, 12:11:17 PM)
+[2016.08.04-03.11.17:219][903]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.08.04-03.11.17:222][903]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003799s)
+[2016.08.04-03.11.17:223][903]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.08.04-03.11.17:223][903]LogPlayLevel: PIE: World Init took: (0.000944s)
+[2016.08.04-03.11.17:224][903]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.005064s)
+[2016.08.04-03.11.17:323][903]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.08.04-03.11.17:329][903]LogInit: FAudioDevice initialized.
+[2016.08.04-03.11.17:386][903]LogWorld: Game class is 'GameMode_BP_C'
+[2016.08.04-03.11.17:391][903]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.08.03-20.11.17
+[2016.08.04-03.11.17:392][903]LogWorld: Bringing up level for play took: 0.004427
+[2016.08.04-03.11.17:408][903]PIE: Info Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap 1.108
+[2016.08.04-03.11.17:408][903]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.11.31:468][512]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.11.31:641][512]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.11.35:739][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HUD" FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/HUD.uasset" SILENT=true
+[2016.08.04-03.11.35:741][864]LogSavePackage: Save=1.07ms
+[2016.08.04-03.11.35:741][864]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/HUD11B7F11A405F1DB39C457BB2888CA5B2.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/HUD.uasset'
+[2016.08.04-03.11.35:743][864]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/HUD.uasset
+[2016.08.04-03.11.35:750][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/NewBlueprint" FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/NewBlueprint.uasset" SILENT=true
+[2016.08.04-03.11.35:756][864]LogSavePackage: Save=1.20ms
+[2016.08.04-03.11.35:756][864]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/NewBlueprint5019A79C45823E0896F2978AEC46CE5B.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/NewBlueprint.uasset'
+[2016.08.04-03.11.35:757][864]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/NewBlueprint.uasset
+[2016.08.04-03.11.35:761][864]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/GameMode_BP" FILE="../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/GameMode_BP.uasset" SILENT=true
+[2016.08.04-03.11.35:775][864]LogSavePackage: Save=10.53ms
+[2016.08.04-03.11.35:775][864]LogSavePackage: Moving '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Saved/GameMode_BP4DED760F42D76D5410AF1C8E52619083.tmp' to '../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/GameMode_BP.uasset'
+[2016.08.04-03.11.35:776][864]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/Content/Blueprints/GameMode_BP.uasset
+[2016.08.04-03.12.28:973][178]BlueprintLog: New page: Compile PlayerHUD
+[2016.08.04-03.12.29:111][178]BlueprintEditorCompileResults: Info [3381.85] Compile of PlayerHUD successful! [in 137 ms] (/Game/Blueprints/PlayerHUD.PlayerHUD)
+[2016.08.04-03.12.33:576][610]Recompiling UE4_ProjectD...
+[2016.08.04-03.12.33:576][610]Launching UnrealBuildTool... [C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/DotNET/UnrealBuildTool.exe UE4_ProjectD -ModuleWithSuffix UE4_ProjectD 11 Win64 Development -editorrecompile -canskiplink "C:/Users/Jason/Desktop/GitHub/ProjectD/UE4_ProjectD/UE4_ProjectD.uproject"  -2015]
+[2016.08.04-03.12.33:577][610]Warning: Starting HotReload took  0.0s.
+[2016.08.04-03.12.34:868][667]CompilerResultsLog: New page: Compilation - Aug 3, 2016, 12:12:34 PM
+[2016.08.04-03.12.34:869][667]CompilerResultsLog: Info Compiling game modules for hot reload
+[2016.08.04-03.12.34:869][667]CompilerResultsLog: Info Target is up to date
+[2016.08.04-03.12.34:869][667]LogMainFrame: MainFrame: Module compiling took 1.302 seconds
+[2016.08.04-03.12.35:256][667]LogContentBrowser: Native class hierarchy populated in 0.0120 seconds. Added 2051 classes and 375 folders.
+[2016.08.04-03.12.35:256][667]Warning: HotReload took  1.7s.
+[2016.08.04-03.12.36:577][721]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.08.04-03.12.36:577][721]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.04-03.12.36:577][721]PIE: New page: PIE session: ThirdPersonExampleMap (Aug 3, 2016, 12:12:36 PM)
+[2016.08.04-03.12.36:578][7

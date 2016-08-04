@@ -10,6 +10,18 @@ class AUE4_ProjectDGameMode : public AGameMode
 
 public:
 	AUE4_ProjectDGameMode();
+
+	virtual void BeginPlay() override;
+
+protected:
+	/** The Widget class to use for HUD */
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Health", Meta = (BlueprintProtected = "true"))
+	TSubclassOf<class UUserWidget> HUDWidgetClass;
+
+	/** instance of HUD */
+	UPROPERTY()
+	class UUserWidget* CurrentWidget;
+
 };
 
 
